@@ -1,43 +1,16 @@
-".container": {
-},
 "Label": {
     width: Ti.UI.SIZE,
     height: Ti.UI.SIZE,
     color: "#000"
 },
-"#news": {
-    backgroundImage: "/images/icons/news.png",
+".icon": {
     height: 85,
-    width: 102,
-    top: 0
-},
-"#news": {
-    backgroundImage: "/images/icons/news.png",
-    height: 85,
-    width: 102,
-    top: 0
-},
-"#news": {
-    backgroundImage: "/images/icons/news.png",
-    height: 85,
-    width: 102,
-    top: 0
-},
-"#news": {
-    backgroundImage: "/images/icons/news.png",
-    height: 85,
-    width: 102,
-    top: 0
-},
-"#news": {
-    backgroundImage: "/images/icons/news.png",
-    height: 85,
-    width: 102,
-    top: 0
-},
-"#emergency": {
-    backgroundImage: "/images/icons/emergency.png",
-    height: 85,
-    width: 102,
+    width: 85,
     top: 0
 }
+"#news": {},
+"#people": {},
+"#links": {},
+"#connected": {},
+"#services": {},
+"#emergency": {}

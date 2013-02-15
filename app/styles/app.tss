@@ -1,3 +1,9 @@
 "Window":{
     backgroundImage: "/Default.png"
+},
+"#dashboard":{
+    layout: "horizontal",
+    height: 170,
+    width: 306,
+    bottom: 40
 }
