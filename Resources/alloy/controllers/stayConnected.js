@@ -2,16 +2,16 @@ function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     $model = arguments[0] ? arguments[0].$model : null;
     var $ = this, exports = {}, __defers = {};
-    $.__views.newsEvents = A$(Ti.UI.createWindow({
+    $.__views.stayConnected = A$(Ti.UI.createWindow({
         backgroundColor: "#fff",
-        id: "newsEvents"
+        id: "stayConnected"
     }), "Window", null);
-    $.addTopLevelView($.__views.newsEvents);
-    $.__views.__alloyId3 = A$(Ti.UI.createLabel({
-        text: "News &amp; Events",
-        id: "__alloyId3"
-    }), "Label", $.__views.newsEvents);
-    $.__views.newsEvents.add($.__views.__alloyId3);
+    $.addTopLevelView($.__views.stayConnected);
+    $.__views.__alloyId6 = A$(Ti.UI.createLabel({
+        text: "Stay Connected",
+        id: "__alloyId6"
+    }), "Label", $.__views.stayConnected);
+    $.__views.stayConnected.add($.__views.__alloyId6);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

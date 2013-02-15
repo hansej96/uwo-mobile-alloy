@@ -1,12 +1,12 @@
 <Alloy>
     <Window class="container">
         <View id="dashboard">
-            <ImageView id="news" class="icon" onClick="newsClick" image="/images/icons/news.png"/>
-            <ImageView id="people" class="icon" image="/images/icons/peopleplaces.png"/>
-            <ImageView id="links" class="icon" image="/images/icons/quicklinks.png"/>
-            <ImageView id="connected" class="icon" image="/images/icons/connected.png"/>
-            <ImageView id="services" class="icon" image="/images/icons/campusservices.png"/>
-            <ImageView id="emergency" class="icon" image="/images/icons/emergency.png"/>
+            <ImageView id="news" class="icon" onClick="newsEventsClick" image="/images/icons/news.png"/>
+            <ImageView id="people" class="icon" onClick="peoplePlacesClick" image="/images/icons/peopleplaces.png"/>
+            <ImageView id="links" class="icon" onClick="quickLinksClick" image="/images/icons/quicklinks.png"/>
+            <ImageView id="connected" class="icon" onClick="stayConnectedClick" image="/images/icons/connected.png"/>
+            <ImageView id="services" class="icon" onClick="campusServicesClick" image="/images/icons/campusservices.png"/>
+            <ImageView id="emergency" class="icon" onClick="emergencyClick" image="/images/icons/emergency.png"/>
         </View>
     </Window>
 </Alloy>
