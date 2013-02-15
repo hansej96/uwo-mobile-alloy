@@ -4,14 +4,15 @@ function Controller() {
     var $ = this, exports = {}, __defers = {};
     $.__views.stayConnected = A$(Ti.UI.createWindow({
         backgroundColor: "#fff",
+        barColor: "#555",
         id: "stayConnected"
     }), "Window", null);
     $.addTopLevelView($.__views.stayConnected);
-    $.__views.__alloyId6 = A$(Ti.UI.createLabel({
+    $.__views.__alloyId7 = A$(Ti.UI.createLabel({
         text: "Stay Connected",
-        id: "__alloyId6"
+        id: "__alloyId7"
     }), "Label", $.__views.stayConnected);
-    $.__views.stayConnected.add($.__views.__alloyId6);
+    $.__views.stayConnected.add($.__views.__alloyId7);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

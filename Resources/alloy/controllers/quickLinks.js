@@ -4,14 +4,15 @@ function Controller() {
     var $ = this, exports = {}, __defers = {};
     $.__views.quickLinks = A$(Ti.UI.createWindow({
         backgroundColor: "#fff",
+        barColor: "#555",
         id: "quickLinks"
     }), "Window", null);
     $.addTopLevelView($.__views.quickLinks);
-    $.__views.__alloyId5 = A$(Ti.UI.createLabel({
+    $.__views.__alloyId6 = A$(Ti.UI.createLabel({
         text: "Quick Links",
-        id: "__alloyId5"
+        id: "__alloyId6"
     }), "Label", $.__views.quickLinks);
-    $.__views.quickLinks.add($.__views.__alloyId5);
+    $.__views.quickLinks.add($.__views.__alloyId6);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

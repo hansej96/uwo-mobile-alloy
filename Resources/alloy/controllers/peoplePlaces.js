@@ -4,14 +4,15 @@ function Controller() {
     var $ = this, exports = {}, __defers = {};
     $.__views.peoplePlaces = A$(Ti.UI.createWindow({
         backgroundColor: "#fff",
+        barColor: "#555",
         id: "peoplePlaces"
     }), "Window", null);
     $.addTopLevelView($.__views.peoplePlaces);
-    $.__views.__alloyId4 = A$(Ti.UI.createLabel({
+    $.__views.__alloyId5 = A$(Ti.UI.createLabel({
         text: "People &amp; Places",
-        id: "__alloyId4"
+        id: "__alloyId5"
     }), "Label", $.__views.peoplePlaces);
-    $.__views.peoplePlaces.add($.__views.__alloyId4);
+    $.__views.peoplePlaces.add($.__views.__alloyId5);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

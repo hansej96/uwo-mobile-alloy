@@ -4,6 +4,7 @@ function Controller() {
     var $ = this, exports = {}, __defers = {};
     $.__views.campusServices = A$(Ti.UI.createWindow({
         backgroundColor: "#fff",
+        barColor: "#555",
         id: "campusServices"
     }), "Window", null);
     $.addTopLevelView($.__views.campusServices);

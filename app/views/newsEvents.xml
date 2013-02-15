@@ -1,5 +1,9 @@
 <Alloy>
     <Window>
-        <Label>News & Events</Label>
+        <NavigationGroup id="navgroup" platform="ios,mobileweb">
+            <Window title="News & Events" id="win1">
+                <Label>This is News & Events Window</Label>
+            </Window>
+        </NavigationGroup>
     </Window>
 </Alloy>
