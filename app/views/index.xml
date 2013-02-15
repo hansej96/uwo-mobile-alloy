@@ -1,5 +1,10 @@
 <Alloy>
     <Window class="container">
-        <Label id="label" onClick="doClick">Hello, World</Label>
+        <View id="news" image="/images/icons/news.png"/>
+        <View id="people" image="/images/icons/people.png"/>
+        <View id="links" image="/images/icons/links.png"/>
+        <View id="connected" image="/images/icons/connected.png"/>
+        <View id="services" image="/images/icons/services.png"/>
+        <View id="emergency" image="/images/icons/emergency.png"/>
     </Window>
 </Alloy>
