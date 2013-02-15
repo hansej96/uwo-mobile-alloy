@@ -1,6 +1,9 @@
 "Window":{
-    backgroundImage: "/Default.png"
+    backgroundColor: "#fff"
 },
+".container":{
+    backgroundImage: "/Default.png"
+}
 "#dashboard":{
     layout: "horizontal",
     height: 170,

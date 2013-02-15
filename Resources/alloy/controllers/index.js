@@ -1,12 +1,12 @@
 function Controller() {
     function newsClick(e) {
-        var controller = Alloy.createController("news-events");
-        controller.getView().open();
+        Alloy.createController("newsEvents").getView().open();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     $model = arguments[0] ? arguments[0].$model : null;
     var $ = this, exports = {}, __defers = {};
     $.__views.index = A$(Ti.UI.createWindow({
+        backgroundColor: "#fff",
         backgroundImage: "/Default.png",
         id: "index"
     }), "Window", null);
