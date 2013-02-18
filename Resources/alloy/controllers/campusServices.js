@@ -4,11 +4,16 @@ function Controller() {
     var $ = this, exports = {}, __defers = {};
     $.__views.campusServices = A$(Ti.UI.createWindow({
         backgroundColor: "#fff",
-        barColor: "#555",
+        barColor: "#414444",
         id: "campusServices"
     }), "Window", null);
     $.addTopLevelView($.__views.campusServices);
     $.__views.__alloyId0 = A$(Ti.UI.createLabel({
+        color: "#414444",
+        fontWeight: "bold",
+        fontSize: 16,
+        textAlign: "left",
+        left: 90,
         text: "Campu Services",
         id: "__alloyId0"
     }), "Label", $.__views.campusServices);

@@ -1,9 +1,18 @@
 <Alloy>
-    <Window>
-        <NavigationGroup id="navgroup" platform="ios,mobileweb">
-            <Window title="News & Events" id="win1">
-                <Label>This is News & Events Window</Label>
-            </Window>
-        </NavigationGroup>
+    <Window title="News & Events">
+        <TableView>
+            <TableViewRow leftImage="/images/icons/uwot.png">
+                <Label>UW Oshkosh Today</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/events.png">
+                <Label>Campus Events</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/at.png">
+                <Label>Advance-Titan</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/commence.png">
+                <Label>Commencement</Label>
+            </TableViewRow>
+        </TableView>
     </Window>
 </Alloy>

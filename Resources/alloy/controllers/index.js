@@ -22,7 +22,7 @@ function Controller() {
     var $ = this, exports = {}, __defers = {};
     $.__views.index = A$(Ti.UI.createWindow({
         backgroundColor: "#fff",
-        barColor: "#555",
+        barColor: "#414444",
         backgroundImage: "/Default.png",
         id: "index"
     }), "Window", null);

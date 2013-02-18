@@ -1,13 +1,23 @@
 "Window":{
     backgroundColor: "#fff",
-    barColor: "#555"
+    barColor: "#414444"
 },
 ".container":{
     backgroundImage: "/Default.png"
-}
+},
 "#dashboard":{
     layout: "horizontal",
     height: 170,
     width: 306,
     bottom: 40
+},
+"TableViewRow":{
+    height: 85
+},
+"Label":{
+    color: "#414444",
+    fontWeight: "bold",
+    fontSize: 16,
+    textAlign: "left",
+    left: 90
 }
