@@ -1,5 +1,18 @@
 <Alloy>
-    <Window>
-        <Label>Campu Services</Label>
+    <Window title="Campus Services">
+        <TableView>
+            <TableViewRow leftImage="/images/icons/titancard.png">
+                <Label>Check Your Titancard Balance</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/polk2.png">
+                <Label>Polk Library</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/dining.png">
+                <Label>Student Recreation & Wellness Center</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/dining.png">
+                <Label>Today's Dining Menus'</Label>
+            </TableViewRow>
+        </TableView>
     </Window>
 </Alloy>
