@@ -1,3 +1,7 @@
+"Window":{
+    backgroundImage: "/Default.png",
+    navBarHidden: true
+},
 "Label": {
     width: Ti.UI.SIZE,
     height: Ti.UI.SIZE,

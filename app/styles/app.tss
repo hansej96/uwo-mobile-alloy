@@ -2,9 +2,6 @@
     backgroundColor: "#fff",
     barColor: "#414444"
 },
-".container":{
-    backgroundImage: "/Default.png"
-},
 "#dashboard":{
     layout: "horizontal",
     height: 170,

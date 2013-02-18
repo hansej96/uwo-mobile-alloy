@@ -1,3 +1,6 @@
+"Window":{
+    navBarHidden: false
+},
 ".container": {
 	backgroundColor: "white"
 }
