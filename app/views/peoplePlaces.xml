@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="News & Events">
+    <Window title="People & Places">
         <TableView>
             <TableViewRow leftImage="/images/icons/peoplesearch.png">
                 <Label>People Search</Label>

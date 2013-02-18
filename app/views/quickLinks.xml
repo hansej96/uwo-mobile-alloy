@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="News & Events">
+    <Window title="Quicklinks">
         <TableView>
             <TableViewRow leftImage="/images/icons/titanweb.png">
                 <Label>TitanWeb</Label>
