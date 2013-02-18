@@ -8,16 +8,16 @@ function Controller() {
         id: "quickLinks"
     }), "Window", null);
     $.addTopLevelView($.__views.quickLinks);
-    $.__views.__alloyId14 = A$(Ti.UI.createLabel({
+    $.__views.__alloyId25 = A$(Ti.UI.createLabel({
         color: "#414444",
         fontWeight: "bold",
         fontSize: 16,
         textAlign: "left",
         left: 90,
         text: "Quick Links",
-        id: "__alloyId14"
+        id: "__alloyId25"
     }), "Label", $.__views.quickLinks);
-    $.__views.quickLinks.add($.__views.__alloyId14);
+    $.__views.quickLinks.add($.__views.__alloyId25);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

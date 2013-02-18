@@ -1,5 +1,18 @@
 <Alloy>
-    <Window>
-        <Label>Quick Links</Label>
+    <Window title="News & Events">
+        <TableView>
+            <TableViewRow leftImage="/images/icons/titanweb.png">
+                <Label>TitanWeb</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/d2l.png">
+                <Label>Desire 2 Learn</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/titanmail.png">
+                <Label>TitanWeb (email)</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/titanmobile.png">
+                <Label>TitanWeb (email) mobile setup</Label>
+            </TableViewRow>
+        </TableView>
     </Window>
 </Alloy>
