@@ -1,5 +1,18 @@
 <Alloy>
-    <Window>
-        <Label>Stay Connected</Label>
+    <Window title="Stay Connected">
+        <TableView>
+            <TableViewRow leftImage="/images/icons/twitter.png">
+                <Label>Twitter</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/facebook.png">
+                <Label>Facebook</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/youtube.png">
+                <Label>YouTube</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/foursquare.png">
+                <Label>Foursquare</Label>
+            </TableViewRow>
+        </TableView>
     </Window>
 </Alloy>

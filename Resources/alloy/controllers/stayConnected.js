@@ -8,16 +8,16 @@ function Controller() {
         id: "stayConnected"
     }), "Window", null);
     $.addTopLevelView($.__views.stayConnected);
-    $.__views.__alloyId15 = A$(Ti.UI.createLabel({
+    $.__views.__alloyId26 = A$(Ti.UI.createLabel({
         color: "#414444",
         fontWeight: "bold",
         fontSize: 16,
         textAlign: "left",
         left: 90,
         text: "Stay Connected",
-        id: "__alloyId15"
+        id: "__alloyId26"
     }), "Label", $.__views.stayConnected);
-    $.__views.stayConnected.add($.__views.__alloyId15);
+    $.__views.stayConnected.add($.__views.__alloyId26);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);
