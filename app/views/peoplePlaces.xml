@@ -1,5 +1,21 @@
 <Alloy>
-    <Window>
-        <Label>People & Places</Label>
+    <Window title="News & Events">
+        <TableView>
+            <TableViewRow leftImage="/images/icons/peoplesearch.png">
+                <Label>People Search</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/deptsearch.png">
+                <Label>Department Search</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/location.png">
+                <Label>Location Search</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/map.png">
+                <Label>Campus Map</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/parking.png">
+                <Label>Parking Map</Label>
+            </TableViewRow>
+        </TableView>
     </Window>
 </Alloy>
