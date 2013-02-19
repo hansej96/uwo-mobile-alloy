@@ -10,7 +10,7 @@
             <TableViewRow leftImage="/images/icons/location.png">
                 <Label>Location Search</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/map.png">
+            <TableViewRow leftImage="/images/icons/map.png" onClick="campusMapClick">
                 <Label>Campus Map</Label>
             </TableViewRow>
             <TableViewRow leftImage="/images/icons/parking.png" onClick="parkingMapClick">

@@ -1,0 +1,5 @@
+<Alloy>
+    <Window title="Campus Map">
+        <WebView id="campusMapWebView" url="http://m.uwosh.edu/api/beta/2.0/map" />
+    </Window>
+</Alloy>

@@ -1,7 +1,7 @@
 <Alloy>
     <Window class="index">
         <NavigationGroup id="navgroup" platform="ios,mobileweb">
-            <Window class="index">
+            <Window class="index" title="Dashboard">
                 <View id="dashboard">
                     <ImageView id="news" class="icon" onClick="newsEventsClick" image="/images/icons/news.png"/>
                     <ImageView id="people" class="icon" onClick="peoplePlacesClick" image="/images/icons/peopleplaces.png"/>

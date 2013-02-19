@@ -1,16 +1,16 @@
 <Alloy>
     <Window title="Quicklinks">
         <TableView>
-            <TableViewRow leftImage="/images/icons/titanweb.png">
+            <TableViewRow leftImage="/images/icons/titanweb.png" onClick="titanWebClick">
                 <Label>TitanWeb</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/d2l.png">
+            <TableViewRow leftImage="/images/icons/d2l.png" onClick="d2lClick">
                 <Label>Desire 2 Learn</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/titanmail.png">
+            <TableViewRow leftImage="/images/icons/titanmail.png" onClick="titanEmailClick">
                 <Label>TitanWeb (email)</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/titanmobile.png">
+            <TableViewRow leftImage="/images/icons/titanmobile.png" onClick="mobileSetupClick">
                 <Label>TitanWeb (email) mobile setup</Label>
             </TableViewRow>
         </TableView>
