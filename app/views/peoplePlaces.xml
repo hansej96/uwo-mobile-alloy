@@ -13,7 +13,7 @@
             <TableViewRow leftImage="/images/icons/map.png">
                 <Label>Campus Map</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/parking.png">
+            <TableViewRow leftImage="/images/icons/parking.png" onClick="parkingMapClick">
                 <Label>Parking Map</Label>
             </TableViewRow>
         </TableView>

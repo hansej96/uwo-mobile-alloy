@@ -1,0 +1,5 @@
+<Alloy>
+    <Window title="Parking Map">
+        <WebView id="parkingMapWebView" url="http://m.uwosh.edu/api/beta/2.0/map/parking" />
+    </Window>
+</Alloy>
