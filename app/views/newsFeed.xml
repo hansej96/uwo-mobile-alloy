@@ -1,0 +1,6 @@
+<Alloy>
+    <Window title="News Feed">
+        <TableView id="newsFeedTable">
+        </TableView>
+    </Window>
+</Alloy>
