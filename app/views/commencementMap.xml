@@ -1,0 +1,7 @@
+<Alloy>
+    <Window title="Commencement Map">
+        <View ns="Ti.Map" id="map">
+            <Annotation id="kolf" title="Kolf Sports Center" subtitle="ready, set, graduate!" latitude="44.024311065674" longitude="-88.552352905273"/>
+        </View>
+    </Window>
+</Alloy>

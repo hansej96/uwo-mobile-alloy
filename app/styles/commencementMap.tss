@@ -1,0 +1,11 @@
+"#map": {
+    animate: true,
+    regionFit: true,
+    userLocation: true,
+    region: {
+        latitude: "44.027",
+        longitude: "-88.5425",
+        latitudeDelta: 0.1, 
+        longitudeDelta: 0.1
+    }
+}
