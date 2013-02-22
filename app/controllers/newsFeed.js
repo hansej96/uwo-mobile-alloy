@@ -1,4 +1,6 @@
 function refreshRSS(feed) {
+    // Show the loading icon.
+    $.loading.setOpacity(1.0);
     var data = [];
     var xhr = Ti.Network.createHTTPClient();
 
@@ -51,6 +53,9 @@ function refreshRSS(feed) {
     };
     
     xhr.send();
+    // Hide the loading icon.
+    $.loading.setOpacity(0.0);
 }
 
+// Load the RSS feed
 refreshRSS(arguments[0].url);
