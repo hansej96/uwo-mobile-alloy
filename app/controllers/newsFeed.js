@@ -57,5 +57,11 @@ function refreshRSS(feed) {
     $.loading.setOpacity(0.0);
 }
 
-// Load the RSS feed
+if(Ti.Network.online) {
+    // Load the RSS feed
+    refreshRSS(arguments[0].url);
+} else {
+    alert('No network connection detected.');
+}
+
 refreshRSS(arguments[0].url);
