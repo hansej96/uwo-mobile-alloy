@@ -1,4 +1,4 @@
-function createRSS() {
+function refreshRSS() {
     var data = [];
     var xhr = Ti.Network.createHTTPClient();
 
@@ -53,4 +53,4 @@ function createRSS() {
     xhr.send();
 }
 
-createRSS();
+refreshRSS();
