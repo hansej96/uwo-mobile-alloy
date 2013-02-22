@@ -1,8 +1,8 @@
-function refreshRSS() {
+function refreshRSS(feed) {
     var data = [];
     var xhr = Ti.Network.createHTTPClient();
 
-    xhr.open("GET", "http://www.uwosh.edu/today/feed/?cat=5%2C6");
+    xhr.open("GET", feed);
     xhr.onerror = function(e) {
         Ti.API.info(e);
     };
@@ -53,4 +53,4 @@ function refreshRSS() {
     xhr.send();
 }
 
-refreshRSS();
+refreshRSS(arguments[0].url);
