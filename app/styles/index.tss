@@ -9,7 +9,7 @@
 },
 ".icon": {
     height: 85,
-    width: 85,
+    width: 102,
     top: 0
 }
 "#newsEvents": {},

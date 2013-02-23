@@ -3,23 +3,23 @@
         <NavigationGroup id="navgroup" platform="ios,mobileweb">
             <Window class="index" title="Dashboard">
                 <View id="dashboard">
-                    <ImageView id="news" class="icon" onClick="newsEventsClick" image="/images/icons/news.png"/>
-                    <ImageView id="people" class="icon" onClick="peoplePlacesClick" image="/images/icons/peopleplaces.png"/>
-                    <ImageView id="links" class="icon" onClick="quickLinksClick" image="/images/icons/quicklinks.png"/>
-                    <ImageView id="connected" class="icon" onClick="stayConnectedClick" image="/images/icons/connected.png"/>
-                    <ImageView id="services" class="icon" onClick="campusServicesClick" image="/images/icons/campusservices.png"/>
-                    <ImageView id="emergency" class="icon" onClick="emergencyClick" image="/images/icons/emergency.png"/>
+                    <ImageView id="news" class="icon" onClick="newsEventsClick" image="/images/dashboard/news.png"/>
+                    <ImageView id="people" class="icon" onClick="peoplePlacesClick" image="/images/dashboard/people.png"/>
+                    <ImageView id="links" class="icon" onClick="quickLinksClick" image="/images/dashboard/links.png"/>
+                    <ImageView id="connected" class="icon" onClick="stayConnectedClick" image="/images/dashboard/connected.png"/>
+                    <ImageView id="services" class="icon" onClick="campusServicesClick" image="/images/dashboard/services.png"/>
+                    <ImageView id="emergency" class="icon" onClick="emergencyClick" image="/images/dashboard/emergency.png"/>
                 </View>
             </Window>
         </NavigationGroup>
-        
+
         <View id="dashboard" platform="android">
-            <ImageView id="news" class="icon" onClick="newsEventsClick" image="/images/icons/news.png"/>
-            <ImageView id="people" class="icon" onClick="peoplePlacesClick" image="/images/icons/peopleplaces.png"/>
-            <ImageView id="links" class="icon" onClick="quickLinksClick" image="/images/icons/quicklinks.png"/>
-            <ImageView id="connected" class="icon" onClick="stayConnectedClick" image="/images/icons/connected.png"/>
-            <ImageView id="services" class="icon" onClick="campusServicesClick" image="/images/icons/campusservices.png"/>
-            <ImageView id="emergency" class="icon" onClick="emergencyClick" image="/images/icons/emergency.png"/>
+            <ImageView id="news" class="icon" onClick="newsEventsClick" image="/images/dashboard/news.png"/>
+            <ImageView id="people" class="icon" onClick="peoplePlacesClick" image="/images/dashboard/people.png"/>
+            <ImageView id="links" class="icon" onClick="quickLinksClick" image="/images/dashboard/links.png"/>
+            <ImageView id="connected" class="icon" onClick="stayConnectedClick" image="/images/dashboard/connected.png"/>
+            <ImageView id="services" class="icon" onClick="campusServicesClick" image="/images/dashboard/services.png"/>
+            <ImageView id="emergency" class="icon" onClick="emergencyClick" image="/images/dashboard/emergency.png"/>
         </View>
     </Window>
 </Alloy>
