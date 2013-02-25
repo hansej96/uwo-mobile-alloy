@@ -1,7 +1,11 @@
 if (OS_IOS || OS_MOBILEWEB) {
     
     function peopleSearchClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('campusSearch').getView());
+        Alloy.CFG.navgroup.open(Alloy.createController('campusSearch', { peopleOrDeptUrl: "/directory/search/person/" }).getView());
+    }
+    
+    function deptSearchClick(e) {
+        Alloy.CFG.navgroup.open(Alloy.createController('campusSearch', { peopleOrDeptUrl: "/directory/search/dept/" }).getView());
     }
     
     function parkingMapClick(e) {
@@ -15,7 +19,11 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     
     function peopleSearchClick(e) {
-        Alloy.createController('campusSearch').getView().open();
+        Alloy.createController('campusSearch', { peopleOrDeptUrl: "/directory/search/person/" }).getView().open();
+    }
+    
+    function deptSearchClick(e) {
+        Alloy.createController('campusSearch', { peopleOrDeptUrl: "/directory/search/dept/" }).getView().open();
     }
     
     function parkingMapClick(e) {

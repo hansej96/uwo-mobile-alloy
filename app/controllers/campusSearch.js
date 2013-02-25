@@ -115,13 +115,16 @@ function doSearch(path) {
     xhr.send();
 }
 
+// Is this a people search or a department search?
+var peopleOrDeptUrl = arguments[0].peopleOrDeptUrl;
+
 // Search Bar
 $.sb.addEventListener('cancel', function(e) {
     $.sb.blur();
 });
 $.sb.addEventListener('return', function(e) {
     $.sb.blur();
-    var searchPath = "/directory/search/person/" + Titanium.Network.encodeURIComponent(e.value);
+    var searchPath = peopleOrDeptUrl + Titanium.Network.encodeURIComponent(e.value);
     var path = "http://m.uwosh.edu/api/beta/2.0" + searchPath;
 
     if(Ti.Network.online) {

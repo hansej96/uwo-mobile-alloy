@@ -4,7 +4,7 @@
             <TableViewRow leftImage="/images/icons/peoplesearch.png" onClick="peopleSearchClick">
                 <Label>People Search</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/deptsearch.png">
+            <TableViewRow leftImage="/images/icons/deptsearch.png" onClick="deptSearchClick">
                 <Label>Department Search</Label>
             </TableViewRow>
             <TableViewRow leftImage="/images/icons/location.png">
