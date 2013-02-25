@@ -15,10 +15,10 @@ function refreshRSS(feed) {
             var doc = this.responseXML.documentElement;
             var items = doc.getElementsByTagName("item");
             var x = 0;
-            
+
             for(var c = 0; c < items.length; c++) {
                 var item = items.item(c);
-                
+
                 var title = item.getElementsByTagName("title").item(0).text;
                 var row = Ti.UI.createTableViewRow({
                     height : 60,
@@ -40,18 +40,18 @@ function refreshRSS(feed) {
                 row.shortTitle = title;
                 row.url = item.getElementsByTagName("link").item(0).text;
             }
-            
+
             $.newsFeedTable.setData(data);
-            
+
             $.newsFeedTable.addEventListener('click', function (e) {
                 Ti.Platform.openURL(e.row.url);
             });
-            
+
         } catch(E) {
             Titanium.API.log(E);
         }
     };
-    
+
     xhr.send();
     // Hide the loading icon.
     $.loading.setOpacity(0.0);
@@ -63,5 +63,3 @@ if(Ti.Network.online) {
 } else {
     alert('No network connection detected.');
 }
-
-refreshRSS(arguments[0].url);

@@ -1,7 +1,6 @@
 <Alloy>
     <Window title="News Feed">
         <Require id="loading" type="widget" src="com.appcelerator.loading"/>
-        <TableView id="newsFeedTable">
-        </TableView>
+        <TableView id="newsFeedTable" />
     </Window>
 </Alloy>
