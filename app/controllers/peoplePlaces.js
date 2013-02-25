@@ -8,6 +8,10 @@ if (OS_IOS || OS_MOBILEWEB) {
         Alloy.CFG.navgroup.open(Alloy.createController('campusSearch', { peopleOrDeptUrl: "/directory/search/dept/" }).getView());
     }
     
+    function locationSearchClick(e) {
+        Alloy.CFG.navgroup.open(Alloy.createController('locationSearch').getView());
+    }
+    
     function parkingMapClick(e) {
         Alloy.CFG.navgroup.open(Alloy.createController('parkingMap').getView());
     }
@@ -24,6 +28,10 @@ if (OS_IOS || OS_MOBILEWEB) {
     
     function deptSearchClick(e) {
         Alloy.createController('campusSearch', { peopleOrDeptUrl: "/directory/search/dept/" }).getView().open();
+    }
+    
+    function locationSearchClick(e) {
+        Alloy.createController('locationSearch').getView().open();
     }
     
     function parkingMapClick(e) {
