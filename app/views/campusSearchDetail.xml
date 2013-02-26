@@ -1,0 +1,7 @@
+<Alloy>
+    <Window>
+        <View>
+            <Label id="name" />
+        </View>
+    </Window>
+</Alloy>

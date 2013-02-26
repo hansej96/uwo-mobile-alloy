@@ -16,6 +16,10 @@ function peopleSearch(path) {
                 }).getView());
             });
             $.campusSearchTable.setData(rows);
+            
+            $.campusSearchTable.addEventListener("click", function (e) {
+                Alloy.CFG.navgroup.open(Alloy.createController('campusSearchDetail', { fullName: e.rowData.fullName }).getView());
+            });
         }
     }, path);
 }
