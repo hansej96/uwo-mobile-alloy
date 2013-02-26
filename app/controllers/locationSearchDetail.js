@@ -1,0 +1,10 @@
+var args = arguments[0] || {};
+
+$.id.text = args.location.id;
+$.title.text = args.location.title;
+$.description.text = args.location.description;
+$.address.text = args.location.address;
+$.image.text = args.location.image;
+$.panorama.text = args.location.panorama;
+$.latitude.text = args.location.latitude;
+$.longitude.text = args.location.longitude;

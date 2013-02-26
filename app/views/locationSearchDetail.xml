@@ -1,0 +1,30 @@
+<Alloy>
+    <Window>
+        <TableView>
+            <TableViewRow>
+                <Label id="id" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="title" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="description" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="address" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="image" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="panorama" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="latitude" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="longitude" />
+            </TableViewRow>
+        </TableView>
+    </Window>
+</Alloy>
