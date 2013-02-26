@@ -6,13 +6,6 @@ function peopleSearch(path) {
             var rows = [];
             _.each(data, function(item) {
                 rows.push(Alloy.createController("campusSearchRow", {
-                    /*firstName: item.firstName,
-                    lastName: item.lastName,
-                    fullName: item.fullName,
-                    email: item.email,
-                    dept: item.dept,
-                    phone: item.phone,
-                    office: item.office*/
                    item: item
                 }).getView());
             });

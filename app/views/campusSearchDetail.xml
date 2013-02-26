@@ -1,7 +1,21 @@
 <Alloy>
     <Window>
-        <View>
-            <Label id="name" />
-        </View>
+        <TableView>
+            <TableViewRow>
+                <Label id="name" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="dept" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="email" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="phone" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="office" />
+            </TableViewRow>
+        </TableView>
     </Window>
 </Alloy>
