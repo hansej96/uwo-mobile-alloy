@@ -13,7 +13,7 @@
             <TableViewRow>
                 <Label id="address" />
             </TableViewRow>
-            <TableViewRow>
+            <TableViewRow onClick="imageClick">
                 <ImageView id="image" />
             </TableViewRow>
             <TableViewRow>
