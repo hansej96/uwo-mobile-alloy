@@ -4,10 +4,10 @@ function refreshRSS(feed) {
     rss.loadRssFeed({
         success: function(data) {
             var rows = [];
-            _.each(items, function(item) {
+            _.each(data, function(item) {
                 rows.push(Alloy.createController("newsFeedRow", {
-                    articleUrl: item.getElementsByTagName("link").item(0).text,
-                    title: item.getElementsByTagName("title").item(0).text
+                    articleUrl: item.link,
+                    title: item.title
                 }).getView());
             });
             $.newsFeedTable.setData(rows);

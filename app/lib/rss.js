@@ -12,8 +12,6 @@ exports.loadRssFeed = function(o, feed) {
             
             for(var c = 0; c < items.length; c++) {
                 var item = items.item(c);
-
-                var title = item.getElementsByTagName("title").item(0).text;
                 
                 data.push({
                     title: item.getElementsByTagName("title").item(0).text,
