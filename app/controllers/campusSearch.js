@@ -6,20 +6,18 @@ function peopleSearch(path) {
             var rows = [];
             _.each(data, function(item) {
                 rows.push(Alloy.createController("campusSearchRow", {
-                    fistName: item.firstName,
+                    /*firstName: item.firstName,
                     lastName: item.lastName,
                     fullName: item.fullName,
                     email: item.email,
                     dept: item.dept,
                     phone: item.phone,
-                    office: item.office
+                    office: item.office*/
+                   item: item
                 }).getView());
             });
             $.campusSearchTable.setData(rows);
             
-            $.campusSearchTable.addEventListener("click", function (e) {
-                Alloy.CFG.navgroup.open(Alloy.createController('campusSearchDetail', { fullName: e.rowData.fullName }).getView());
-            });
         }
     }, path);
 }
