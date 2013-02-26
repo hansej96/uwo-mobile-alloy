@@ -2,6 +2,9 @@
     backgroundImage: "/Default.png",
     navBarHidden: true
 },
+"Window[platform=android]": {
+    backgroundImage: "/default.png"
+},
 "Label": {
     width: Ti.UI.SIZE,
     height: Ti.UI.SIZE,

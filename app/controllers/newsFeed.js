@@ -7,7 +7,8 @@ function refreshRSS(feed) {
             _.each(data, function(item) {
                 rows.push(Alloy.createController("newsFeedRow", {
                     articleUrl: item.link,
-                    title: item.title
+                    title: item.title,
+                    date: item.date
                 }).getView());
             });
             $.newsFeedTable.setData(rows);

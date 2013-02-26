@@ -1,3 +1,22 @@
-".container": {
-	backgroundColor: "white"
+"#row": {
+    height: 70,
+    hasChild: true
+},
+"#title": {
+    left: 5,
+    top: 5,
+    bottom: 5,
+    right: 5,
+    font: {
+        fontSize: 14
+    },
+    color: "#000"
+},
+"#date": {
+    bottom: 2,
+    left: 5,
+    font: {
+        fontSize: 8
+    },
+    color: "#999"
 }

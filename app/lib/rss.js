@@ -12,10 +12,18 @@ exports.loadRssFeed = function(o, feed) {
             
             for(var c = 0; c < items.length; c++) {
                 var item = items.item(c);
+                var articleDate;
+                
+                try {
+                    articleDate = item.getElementsByTagName("pubDate").item(0).text;
+                } catch (e) {
+                    articleDate = item.getElementsByTagName("dc:date").item(0).text;
+                }
                 
                 data.push({
                     title: item.getElementsByTagName("title").item(0).text,
-                    link: item.getElementsByTagName("link").item(0).text
+                    link: item.getElementsByTagName("link").item(0).text,
+                    date: articleDate
                 });
             }
             if (o.success) { o.success(data); }

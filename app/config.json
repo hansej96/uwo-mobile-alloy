@@ -5,7 +5,5 @@
 	"env:production": {},
 	"os:ios": {},
 	"os:android": {},
-	"dependencies": {
-	   "com.appcelerator.loading":"1.0"
-	}
+	"dependencies": {}
 }
