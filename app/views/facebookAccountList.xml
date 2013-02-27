@@ -5,10 +5,6 @@
                 <ImageView image="/images/avatars/uwoshkosh.jpg" />
                 <Label>University of Wisconsin Oshkosh</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoshkoshTodayClick">
-                <ImageView image="/images/avatars/UWOshkoshToday.jpg" />
-                <Label>University of Wisconsin Oshkosh Today</Label>
-            </TableViewRow>
             <TableViewRow onClick="uwoshkoshEngageClick">
                 <ImageView image="/images/avatars/UWOalumni.jpg" />
                 <Label>University of Wisconsin Oshkosh Alumni</Label>

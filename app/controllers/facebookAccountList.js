@@ -3,10 +3,6 @@ if (OS_IOS || OS_MOBILEWEB) {
         Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://facebook.com/uwoshkosh", title: "UW Oshkosh" }).getView());
     }
 
-    function uwoshkoshTodayClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://facebook.com/uwoshkosh", title: "UW Oshkosh" }).getView());
-    }
-
     function uwoshkoshEngageClick(e) {
         Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://facebook.com/UWOalumni", title: "UWO Alumni" }).getView());
     }
@@ -21,10 +17,6 @@ if (OS_IOS || OS_MOBILEWEB) {
 
 } else {
     function uwoshkoshClick(e) {
-        Alloy.createController('webViews', { url: "https://facebook.com/uwoshkosh", title: "UW Oshkosh" }).getView().open();
-    }
-
-    function uwoshkoshTodayClick(e) {
         Alloy.createController('webViews', { url: "https://facebook.com/uwoshkosh", title: "UW Oshkosh" }).getView().open();
     }
 
