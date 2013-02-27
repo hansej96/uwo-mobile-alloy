@@ -1,0 +1,5 @@
+<Alloy>
+    <Window id="webViewWindow">
+        <WebView id="web" />
+    </Window>
+</Alloy>

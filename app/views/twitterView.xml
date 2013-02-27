@@ -1,5 +1,0 @@
-<Alloy>
-    <Window id="twitterWebView">
-        <WebView id="twitterTimeline" />
-    </Window>
-</Alloy>
