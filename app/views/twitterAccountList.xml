@@ -3,23 +3,23 @@
         <TableView>
             <TableViewRow onClick="uwoshkoshClick">
                 <ImageView image="/images/avatars/uwoshkosh.jpg" />
-                <Label>University of Wisconsin Oshkosh (@uwoshkosh)</Label>
+                <Label>@uwoshkosh</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoshkoshTodayClick">
-                <ImageView image="/images/avatars/UWOshkoshToday.jpg" />
-                <Label>University of Wisconsin Oshkosh Today (@UWOshkoshToday)</Label>
+                <ImageView image="/images/avatars/uwoshkoshToday.jpg" />
+                <Label>@UWOshkoshToday</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoshkoshEngageClick">
                 <ImageView image="/images/avatars/UWOshkoshEngage.jpg" />
-                <Label>University of Wisconsin Oshkosh Engage (@UWOshkoshEngage)</Label>
+                <Label>@UWOshkoshEngage</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoAdmissionsClick">
                 <ImageView image="/images/avatars/UWOAdmissions.jpg" />
-                <Label>University of Wisconsin Oshkosh Admissions (@UWOAdmissions)</Label>
+                <Label>@UWOAdmissions</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoshkoshTitansClick">
                 <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
-                <Label>University of Wisconsin Oshkosh Athletics (@UWOshkoshTitans)</Label>
+                <Label>@UWOshkoshTitans</Label>
             </TableViewRow>
         </TableView>
     </Window>
