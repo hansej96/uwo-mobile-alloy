@@ -2,7 +2,7 @@
 	<Window title="Commencement">
 	    <View id="dashboard">
             <ImageView class="icon" image="/images/commence/fb.png" onClick="commencementFacebookClick" />
-            <ImageView class="icon" image="/images/commence/tw.png" />
+            <ImageView class="icon" image="/images/commence/tw.png" onClick="commencementTwitterClick" />
             <ImageView class="icon" image="/images/commence/maps.png" onClick="commencementMapClick" />
             <ImageView class="icon" image="/images/commence/website.png" onClick="commencementWebsiteClick" />
             <ImageView class="icon" image="/images/commence/program.png" onClick="commencementProgramClick" />
