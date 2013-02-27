@@ -1,4 +1,21 @@
 <Alloy>
-	<View class="container">
-	</View>
+    <Window title="Accounts">
+        <TableView>
+            <TableViewRow>
+                <Label>University of Wisconsin Oshkosh (@uwoshkosh)</Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label>University of Wisconsin Oshkosh Today (@UWOshkoshToday)</Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label>University of Wisconsin Oshkosh Engage (@UWOshkoshEngage)</Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label>University of Wisconsin Oshkosh Admissions (@UWOAdmissions)</Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label>University of Wisconsin Oshkosh Athletics (@UWOshkoshTitans)</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
 </Alloy>
