@@ -10,8 +10,8 @@
                 <Label>University of Wisconsin Oshkosh Today</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoshkoshEngageClick">
-                <ImageView image="/images/avatars/UWOshkoshEngage.jpg" />
-                <Label>University of Wisconsin Oshkosh Engage</Label>
+                <ImageView image="/images/avatars/UWOalumni.jpg" />
+                <Label>University of Wisconsin Oshkosh Alumni</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoAdmissionsClick">
                 <ImageView image="/images/avatars/UWOAdmissions.jpg" />

@@ -8,7 +8,7 @@ if (OS_IOS || OS_MOBILEWEB) {
     }
 
     function uwoshkoshEngageClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://facebook.com/UWOalumni", title: "UWO Engage" }).getView());
+        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://facebook.com/UWOalumni", title: "UWO Alumni" }).getView());
     }
 
     function uwoAdmissionsClick(e) {
@@ -29,7 +29,7 @@ if (OS_IOS || OS_MOBILEWEB) {
     }
 
     function uwoshkoshEngageClick(e) {
-        Alloy.createController('webViews', { url: "https://facebook.com/UWOalumni", title: "UWO Engage" }).getView().open();
+        Alloy.createController('webViews', { url: "https://facebook.com/UWOalumni", title: "UWO Alumni" }).getView().open();
     }
 
     function uwoAdmissionsClick(e) {
