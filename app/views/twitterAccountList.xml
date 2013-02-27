@@ -1,19 +1,24 @@
 <Alloy>
-    <Window title="Accounts">
+    <Window title="Connect">
         <TableView>
-            <TableViewRow>
+            <TableViewRow onClick="uwoshkoshClick">
+                <ImageView image="/images/avatars/uwoshkosh.jpg" />
                 <Label>University of Wisconsin Oshkosh (@uwoshkosh)</Label>
             </TableViewRow>
-            <TableViewRow>
+            <TableViewRow onClick="uwoshkoshTodayClick">
+                <ImageView image="/images/avatars/UWOshkoshToday.jpg" />
                 <Label>University of Wisconsin Oshkosh Today (@UWOshkoshToday)</Label>
             </TableViewRow>
-            <TableViewRow>
+            <TableViewRow onClick="uwoshkoshEngageClick">
+                <ImageView image="/images/avatars/UWOshkoshEngage.jpg" />
                 <Label>University of Wisconsin Oshkosh Engage (@UWOshkoshEngage)</Label>
             </TableViewRow>
-            <TableViewRow>
+            <TableViewRow onClick="uwoAdmissionsClick">
+                <ImageView image="/images/avatars/UWOAdmissions.jpg" />
                 <Label>University of Wisconsin Oshkosh Admissions (@UWOAdmissions)</Label>
             </TableViewRow>
-            <TableViewRow>
+            <TableViewRow onClick="uwoshkoshTitansClick">
+                <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
                 <Label>University of Wisconsin Oshkosh Athletics (@UWOshkoshTitans)</Label>
             </TableViewRow>
         </TableView>
