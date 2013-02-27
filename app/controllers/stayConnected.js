@@ -4,7 +4,7 @@ if (OS_IOS || OS_MOBILEWEB) {
     }
 
     function facebookAccountClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://m.facebook.com/uwoshkosh", title: "UWO Facebook"}).getView());
+        Alloy.CFG.navgroup.open(Alloy.createController('facebookAccountList').getView());
     }
 
     function youtubeAccountClick(e) {
@@ -21,7 +21,7 @@ if (OS_IOS || OS_MOBILEWEB) {
     }
 
     function facebookAccountClick(e) {
-        Alloy.createController('webViews', { url: "https://m.facebook.com/uwoshkosh", title: "UWO Facebook"}).getView().open();
+        Alloy.createController('facebookAccountList').getView().open();
     }
 
     function youtubeAccountClick(e) {
