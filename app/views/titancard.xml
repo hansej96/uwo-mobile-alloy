@@ -1,5 +1,7 @@
 <Alloy>
 	<Window id="titancardWindow" title="Titancard">
+        <TableView>
 
+        </TableView>
     </Window>
 </Alloy>

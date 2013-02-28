@@ -1,4 +1,7 @@
-var portal = require("myuwoWS"),
+var styles = require("styles"),
+    portal = require("myuwoWS"),
+    header = require("HeaderRow"),
+    ActivityIndicator = require("ActivityIndicator"),
     login;
 
 function authSuccess(){
