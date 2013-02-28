@@ -6,16 +6,10 @@ function refreshRSS(feed) {
             var rows = [];
             _.each(data, function(item) {
                 rows.push(Alloy.createController("newsFeedRow", {
-                    articleUrl: item.link,
-                    title: item.title,
-                    date: item.date
+                    item: item
                 }).getView());
             });
             $.newsFeedTable.setData(rows);
-
-            $.newsFeedTable.addEventListener('click', function (e) {
-                Ti.Platform.openURL(e.row.articleUrl);
-            });
         }
     }, feed);
 }

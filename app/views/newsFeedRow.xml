@@ -1,5 +1,5 @@
 <Alloy>
-	<TableViewRow id="row">
+	<TableViewRow id="row" onClick="openArticle">
 	    <Label id="date" />
 	    <Label id="title" />
 	</TableViewRow>
