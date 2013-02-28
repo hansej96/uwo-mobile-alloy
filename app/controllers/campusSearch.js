@@ -10,7 +10,7 @@ function peopleSearch(path) {
                 }).getView());
             });
             $.campusSearchTable.setData(rows);
-            
+
         }
     }, path);
 }
@@ -23,7 +23,6 @@ $.sb.addEventListener('cancel', function(e) {
     $.sb.blur();
 });
 $.sb.addEventListener('return', function(e) {
-    $.sb.blur();
     var searchPath = peopleOrDeptUrl + Titanium.Network.encodeURIComponent(e.value);
     var path = "http://m.uwosh.edu/api/beta/2.0" + searchPath;
 

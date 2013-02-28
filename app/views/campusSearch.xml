@@ -1,7 +1,7 @@
 <Alloy>
     <Window title="Campus Search">
-        <TableView id="campusSearchTable">
-            <SearchBar id="sb" barColor="#000" showCancel="true" height="43" top="0" />
+        <TableView id="campusSearchTable" filterAttribute="filter">
+            <SearchBar id="sb" barColor="#000" showCancel="false" height="70" top="0" />
         </TableView>
     </Window>
 </Alloy>
