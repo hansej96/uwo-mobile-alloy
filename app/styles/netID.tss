@@ -1,0 +1,16 @@
+"Window": {
+    layout: "vertical"
+},
+"TextField": {
+    width: 300,
+    height: 40,
+    top: 5,
+    color: "#336699",
+    borderStyle: Titanium.UI.INPUT_BORDERSTYLE_ROUNDED
+},
+"Button": {
+    width: 90,
+    height: 35,
+    top: 10,
+    borderRadius: 1
+}

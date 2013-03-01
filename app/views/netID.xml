@@ -1,0 +1,7 @@
+<Alloy>
+    <Window title="NetID">
+        <TextField id="username" hintText="Username" />
+        <TextField id="password" hintText="Password" passwordMask="true" />
+        <Button title="Login" onClick="loginClick" />
+    </Window>
+</Alloy>
