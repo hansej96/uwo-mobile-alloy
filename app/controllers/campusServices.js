@@ -7,6 +7,10 @@ if (OS_IOS || OS_MOBILEWEB) {
         }
     }
 
+    function diningLocationsClick(e) {
+        Alloy.CFG.navgroup.open(Alloy.createController('diningLocations').getView());
+    }
+
 } else {
     function titancardClick(e) {
         if(Ti.App.Properties.getBool("myUwoAuth") === true) {
@@ -14,6 +18,10 @@ if (OS_IOS || OS_MOBILEWEB) {
         } else {
             Alloy.createController('netID').getView().open();
         }
+    }
+
+    function diningLocationsClick(e) {
+        Alloy.createController('diningLocations').getView().open();
     }
 
 }

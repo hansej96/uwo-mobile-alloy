@@ -1,0 +1,12 @@
+<Alloy>
+    <Window title="Dining Locations">
+        <TableView>
+            <TableViewRow leftImage="/images/icons/dining.png">
+                <Label>Reeve Union</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/dining.png">
+                <Label>Blackhawk Commons</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+</Alloy>
