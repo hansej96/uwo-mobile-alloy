@@ -16,5 +16,5 @@
     fontWeight: "bold",
     fontSize: 16,
     textAlign: "left",
-    left: 90
+    left: 5
 }
