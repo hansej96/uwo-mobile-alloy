@@ -1,7 +1,32 @@
 <Alloy>
 	<Window id="titancardWindow" title="Titancard">
-        <TableView>
+        <!-- android menu -->
+        <Menu platform="android">
+            <MenuItem title="Logout" onClick="logout" />
+        </Menu>
 
+        <!-- rightNavButton for platforms that support them -->
+        <RightNavButton platform="ios,mobileweb">
+            <Button title="Logout" onClick="logout" />
+        </RightNavButton>
+
+        <TableView id="titancardTableView">
+            <TableViewRow>
+                <Label id="tdLabel">TitanDollar Balance</Label>
+                <Label id="tdbalance"></Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="bmLabel">Board Meals</Label>
+                <Label id="bmBalance"></Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="flexLabel">Flex Meals</Label>
+                <Label id="flexBalance"></Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="diningLabel">Dining Dollars</Label>
+                <Label id="diningBalance"></Label>
+            </TableViewRow>
         </TableView>
     </Window>
 </Alloy>

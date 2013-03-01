@@ -18,15 +18,7 @@ var __isLargeScreen, __isHighDensityScreen, __isAndroid, __isiPad, properties = 
   currentPage = null,
   windowStack = [],
   navGroup, density = Ti.Platform.displayCaps.density;
-/***************************
- * Public methods & variables
- ***************************/
 
-/**
- * Set properties for app
- * @param {String} name Name of property
- * @param {String} value Value of property
- */
 Alloy.Globals.addProperty = function(name, value) {
   properties[name] = value;
 };

@@ -1,3 +1,50 @@
-".container": {
-	backgroundColor: "white"
+"Label": {
+    font: {
+        fontSize: 18
+    },
+    color: "#414444"
+},
+"#tdLabel": {
+    font: {
+        fontWeight: "bold"
+    },
+    textAlign: "left",
+    left: 10
+},
+"#tdbalance": {
+    textAlign: "right",
+    right: 10
+},
+"#bmLabel": {
+    font: {
+        fontWeight: "bold"
+    },
+    textAlign: "left",
+    left: 10
+},
+"#bmBalance": {
+    textAlign: "right",
+    right: 10
+},
+"#flexLabel": {
+    font: {
+        fontWeight: "bold"
+    },
+    textAlign: "left",
+    left: 10
+},
+"#flexBalance": {
+    textAlign: "right",
+    right: 10
+},
+"#diningLabel": {
+    font: {
+        fontWeight: "bold"
+    },
+    textAlign: "left",
+    left: 10
+},
+"#diningBalance": {
+    textAlign: "right",
+    right: 10
 }

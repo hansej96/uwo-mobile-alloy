@@ -2,7 +2,12 @@ var portal = require("myuwoWS");
 
 function authSuccess() {
     Ti.App.Properties.setBool("myUwoAuth", true);
-    Ti.App.fireEvent('return.auth');
+
+    if (OS_IOS || OS_MOBILEWEB) {
+        Alloy.CFG.navgroup.open(Alloy.createController('titancard').getView());
+    } else {
+        Alloy.createController('titancard').getView().open();
+    }
 }
 
 function loginClick (e) {
