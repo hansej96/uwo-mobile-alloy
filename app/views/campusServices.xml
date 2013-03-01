@@ -8,10 +8,10 @@
                 <Label>Polk Library</Label>
             </TableViewRow>
             <TableViewRow leftImage="/images/icons/dining.png">
-                <Label>Student Recreation & Wellness Center</Label>
+                <Label>Student Recreation \u0026 Wellness Center</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/dining.png">
-                <Label>Today's Dining Menus'</Label>
+            <TableViewRow leftImage="/images/icons/dining.png" onClick="diningLocationsClick">
+                <Label>Today's Dining Menus</Label>
             </TableViewRow>
         </TableView>
     </Window>
