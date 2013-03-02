@@ -1,8 +1,8 @@
 exports.doPeopleSearch = function(o, path) {
     var xhr = Ti.Network.createHTTPClient();
-    
+
     xhr.open("GET", path);
-    
+
     xhr.onload = function() {
         try {
             // Parse response data
@@ -10,24 +10,24 @@ exports.doPeopleSearch = function(o, path) {
             var data = [];
 
             for(var x = 0; x < people.length; x++) {
-                    
+
                 data.push({
                     firstName: people[x].firstName,
                     lastName: people[x].lastName,
                     fullName: people[x].firstName + " " + people[x].lastName,
                     email: people[x].email,
                     dept: people[x].deptinfo.dept,
-                    phone: "(920) 424-" + people[x].deptinfo.phone,
+                    phone: people[x].deptinfo.phone,
                     office: people[x].deptinfo.office
                 });
             }
             if (o.success) { o.success(data); }
-            
+
         } catch(e) {
             Ti.API.log(e);
         }
     };
-        
+
     xhr.onerror = function(e) {
         if (o.error) { o.error(); }
     };
@@ -37,9 +37,9 @@ exports.doPeopleSearch = function(o, path) {
 
 exports.doLocationSearch = function(o, path) {
     var xhr = Ti.Network.createHTTPClient();
-    
+
     xhr.open("GET", path);
-    
+
     xhr.onload = function() {
         try {
             // Parse response data
@@ -47,7 +47,7 @@ exports.doLocationSearch = function(o, path) {
             var data = [];
 
             for(var x = 0; x < locations.length; x++) {
-                    
+
                 data.push({
                     id: locations[x].id,
                     title: locations[x].title,
@@ -60,12 +60,12 @@ exports.doLocationSearch = function(o, path) {
                 });
             }
             if (o.success) { o.success(data); }
-            
+
         } catch(e) {
             Ti.API.log(e);
         }
     };
-        
+
     xhr.onerror = function(e) {
         if (o.error) { o.error(); }
     };
