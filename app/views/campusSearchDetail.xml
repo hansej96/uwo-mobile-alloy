@@ -10,7 +10,7 @@
             <TableViewRow>
                 <Label id="email" />
             </TableViewRow>
-            <TableViewRow>
+            <TableViewRow onClick="phoneClick" >
                 <Label id="phone" />
             </TableViewRow>
             <TableViewRow>
