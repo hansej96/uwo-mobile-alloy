@@ -2,9 +2,12 @@ var args = arguments[0] || {};
 var row = [];
 row.feedItem = args.item;
 
+var moment = require("alloy/moment");
+var day = moment(row.feedItem.date);
+
 $.row.articleUrl = row.feedItem.link;
 $.title.text = row.feedItem.title;
-$.date.text = row.feedItem.date;
+$.date.text = day.format("dddd, MMMM Do YYYY, h:mm:ss a");
 
 if (OS_IOS || OS_MOBILEWEB) {
     function openArticle(e) {
