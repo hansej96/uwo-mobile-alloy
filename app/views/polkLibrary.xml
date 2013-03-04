@@ -1,0 +1,15 @@
+<Alloy>
+    <Window title="Campus Services">
+        <TableView>
+            <TableViewRow leftImage="/images/icons/polk2.png" onClick="polkHoursClick">
+                <Label>Hours</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/polk2.png">
+                <Label>Available Computers</Label>
+            </TableViewRow>
+            <TableViewRow leftImage="/images/icons/polk2.png">
+                <Label>GroupFinder</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+</Alloy>

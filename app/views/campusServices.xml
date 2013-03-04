@@ -4,7 +4,7 @@
             <TableViewRow leftImage="/images/icons/titancard.png" onClick="titancardClick">
                 <Label>Check Your Titancard Balance</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/polk2.png">
+            <TableViewRow leftImage="/images/icons/polk2.png" onClick="polkLibraryClick">
                 <Label>Polk Library</Label>
             </TableViewRow>
             <TableViewRow leftImage="/images/icons/dining.png">

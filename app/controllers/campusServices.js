@@ -7,6 +7,10 @@ if (OS_IOS || OS_MOBILEWEB) {
         }
     }
 
+    function polkLibraryClick(e) {
+        Alloy.CFG.navgroup.open(Alloy.createController('polkLibrary').getView());
+    }
+
     function diningLocationsClick(e) {
         Alloy.CFG.navgroup.open(Alloy.createController('diningLocations').getView());
     }
@@ -18,6 +22,10 @@ if (OS_IOS || OS_MOBILEWEB) {
         } else {
             Alloy.createController('netID').getView().open();
         }
+    }
+
+    function polkLibraryClick(e) {
+        Alloy.createController('polkLibrary').getView().open();
     }
 
     function diningLocationsClick(e) {

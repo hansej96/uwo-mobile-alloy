@@ -1,0 +1,6 @@
+<Alloy>
+	<Window title="Polk Hours">
+        <TableView id="hoursTable">
+        </TableView>
+    </Window>
+</Alloy>
