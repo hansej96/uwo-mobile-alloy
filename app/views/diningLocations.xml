@@ -4,7 +4,7 @@
             <TableViewRow leftImage="/images/icons/dining.png" onClick="reeveUnionClick">
                 <Label>Reeve Union</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/dining.png">
+            <TableViewRow leftImage="/images/icons/dining.png" onClick="blackhawkClick">
                 <Label>Blackhawk Commons</Label>
             </TableViewRow>
         </TableView>

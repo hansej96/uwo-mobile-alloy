@@ -1,0 +1,12 @@
+"TableViewRow": {
+	layout: "vertical",
+    height: "auto"
+},
+"Label": {
+    height: "auto",
+    top: 5
+},
+"#restaurant": {
+    backgroundColor: "#999",
+    color: "#FFF"
+}

@@ -1,0 +1,6 @@
+<Alloy>
+    <Window id="diningMenusWindow">
+        <TableView id="diningTable">
+        </TableView>
+    </Window>
+</Alloy>

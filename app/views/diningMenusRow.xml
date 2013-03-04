@@ -1,0 +1,6 @@
+<Alloy>
+    <TableViewRow>
+        <Label id="restaurant" />
+        <Label id="menu" />
+    </TableViewRow>
+</Alloy>
