@@ -1,6 +1,0 @@
-<Alloy>
-    <Window title="Reeve Union">
-        <TableView id="diningTable">
-        </TableView>
-    </Window>
-</Alloy>
