@@ -50,4 +50,28 @@ if (OS_IOS || OS_MOBILEWEB) {
     }
 }
 
+var imageSuffix = '';
+
+if(Alloy.Globals.__isLargeScreen) {
+    imageSuffix = "_ipad";
+}
+$.win.backgroundImage = "/Default.png";
+$.news.image = "/images/dashboard/news" + imageSuffix + ".png";
+$.people.image = "/images/dashboard/people" + imageSuffix + ".png";
+$.links.image = "/images/dashboard/links" + imageSuffix + ".png";
+$.connected.image = "/images/dashboard/connected" + imageSuffix + ".png";
+$.services.image = "/images/dashboard/services" + imageSuffix + ".png";
+$.emergency.image = "/images/dashboard/emergency" + imageSuffix + ".png";
+
+if(Ti.Gesture.orientation == Titanium.UI.LANDSCAPE_LEFT || Ti.Gesture.orientation == Titanium.UI.LANDSCAPE_RIGHT) {
+    $.index.backgroundImage = "/Default-Landscape.png";
+}
+
+Ti.Gesture.addEventListener('orientationchange', function(ev) {
+    if(Alloy.Globals.isLandscape(ev.orientation)) {
+        alert("you rotated");
+        $.win.backgroundImage = "/Default-Landscape.png";
+    }
+});
+
 $.index.open();

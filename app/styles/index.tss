@@ -1,20 +1,18 @@
 "Window":{
-    backgroundImage: "/Default.png",
+    navBarHidden: true
+},
+"Window[platform=ios formFactor=tablet]":{
+    backgroundImage: "/images/home_ipad.png",
     navBarHidden: true
 },
 "Window[platform=android]": {
     backgroundImage: "/default.png"
 },
 "Label": {
-    width: Ti.UI.SIZE,
-    height: Ti.UI.SIZE,
+    width: "auto",
+    height: "auto",
     color: "#000"
 },
-".icon": {
-    height: 85,
-    width: 102,
-    top: 0
-}
 "#newsEvents": {},
 "#people": {},
 "#links": {},

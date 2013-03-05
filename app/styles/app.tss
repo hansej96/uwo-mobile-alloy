@@ -2,12 +2,6 @@
     backgroundColor: "#fff",
     barColor: "#414444"
 },
-"#dashboard":{
-    layout: "horizontal",
-    height: 170,
-    width: 306,
-    bottom: 40
-},
 "TableViewRow":{
     height: 85
 },
@@ -17,4 +11,26 @@
     fontSize: 16,
     textAlign: "left",
     left: 5
+},
+"#dashboard":{
+    layout: "horizontal",
+    height: 170,
+    width: 306,
+    bottom: 40
+},
+"#dashboard[platform=ios formFactor=tablet]":{
+    layout: "horizontal",
+    height: 340,
+    width: 612,
+    bottom: 40
+},
+".icon": {
+    height: 85,
+    width: 102,
+    top: 0
+},
+".icon[platform=ios formFactor=tablet]": {
+    height: 170,
+    width: 204,
+    top: 0
 }
