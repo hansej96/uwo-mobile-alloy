@@ -1,6 +1,39 @@
 <Alloy>
 	<Window title="Polk Hours">
         <TableView id="hoursTable">
+            <TableViewRow class="header">
+                <Label class="headerText">Today</Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="currently" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="todayHours" />
+            </TableViewRow>
+            <TableViewRow class="header">
+                <Label id="day1" class="headerText" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="day1Hours">
+            </TableViewRow>
+            <TableViewRow class="header">
+                <Label id="day2" class="headerText" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="day2Hours">
+            </TableViewRow>
+            <TableViewRow class="header">
+                <Label id="day3" class="headerText" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="day3Hours">
+            </TableViewRow>
+            <TableViewRow class="header">
+                <Label id="day4" class="headerText" />
+            </TableViewRow>
+            <TableViewRow>
+                <Label id="day4Hours">
+            </TableViewRow>
         </TableView>
     </Window>
 </Alloy>
