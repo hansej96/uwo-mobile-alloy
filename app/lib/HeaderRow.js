@@ -2,7 +2,7 @@
  * Header Row UI component
  */
 
-function HeaderRow(title, color) {
+exports.HeaderRow = function(title, color) {
 
   var headerRow = Ti.UI.createTableViewRow({
     classname: 'header_row',
@@ -24,5 +24,3 @@ function HeaderRow(title, color) {
 
   return headerRow;
 }
-
-module.exports = HeaderRow;
