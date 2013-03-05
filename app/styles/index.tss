@@ -1,4 +1,5 @@
 "Window":{
+    backgroundImage: "/Default.png",
     navBarHidden: true
 },
 "Window[platform=ios formFactor=tablet]":{
