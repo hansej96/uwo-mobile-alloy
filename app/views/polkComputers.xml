@@ -1,0 +1,6 @@
+<Alloy>
+    <Window title="Available Computers">
+        <TableView id="availableComputers">
+        </TableView>
+    </Window>
+</Alloy>

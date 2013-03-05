@@ -1,0 +1,16 @@
+"TableViewRow": {
+    height: "auto"
+},
+"Label": {
+    left: 10
+},
+".header": {
+    backgroundColor: "#D79A27"
+},
+".headerText": {
+    color: "#FFF",
+    font: {
+        fontSize: 18,
+        fontWeight: "bold"
+    }
+}

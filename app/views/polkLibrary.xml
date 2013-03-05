@@ -4,10 +4,10 @@
             <TableViewRow leftImage="/images/icons/polk2.png" onClick="polkHoursClick">
                 <Label>Hours</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/polk2.png">
+            <TableViewRow leftImage="/images/icons/polk2.png" onClick="availableComputersClick">
                 <Label>Available Computers</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/polk2.png">
+            <TableViewRow leftImage="/images/icons/polk2.png" onClick="groupFinderClick">
                 <Label>GroupFinder</Label>
             </TableViewRow>
         </TableView>
