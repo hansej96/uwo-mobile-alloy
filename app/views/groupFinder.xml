@@ -1,0 +1,6 @@
+<Alloy>
+    <Window title="Group Finder">
+        <TableView id="groupFinderTable">
+        </TableView>
+    </Window>
+</Alloy>
