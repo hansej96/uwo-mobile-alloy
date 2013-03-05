@@ -1,95 +1,116 @@
 var webservices = require("libraryWS"),
-    header = require("HeaderRow");
+    header = require("HeaderRow"),
+    datetime = require("datetimeJS");
 
-function resources(json, entry) {
+function groupSection(section, data) {
+    for(var i=0; i<section.length; i++) {
+        var groupHeader = new header.HeaderRow(section[i].title,'#414444');
+        var locationRow = Ti.UI.createTableViewRow();
+        var locationLabel = Titanium.UI.createLabel({
+            text:section[i].location,
+            font:{fontSize:18},
+            color: '#414444',
+            left:10,
+            textAlign: 'left'
+        });
+        locationRow.add(locationLabel);
+        var openTime = datetime.cleanTime(section[i].start);
+        var closeTime = datetime.cleanTime(section[i].end);
+        var time = openTime + " - " + closeTime;
+        var timeRow = Ti.UI.createTableViewRow();
+        var timeLabel = Titanium.UI.createLabel({
+            text:time,
+            font:{
+                fontSize:18
+            },
+            color: '#414444',
+            left:10,
+            textAlign: 'left'
+        });
+        timeRow.add(timeLabel);
+
+        data.push(groupHeader);
+        data.push(locationRow);
+        data.push(timeRow);
+    }
+}
+
+function groupFinder(groups, entry){
     var data = [];
-    var labs = json.computers;
-
-    var pcHeader = new header.HeaderRow("Available Computers");
-    data.push(pcHeader);
-
-    for(var i=0; i < json.computers.length; i++) {
-        var labRow = Ti.UI.createTableViewRow();
-        var labName = Titanium.UI.createLabel({
-            text:labs[i].name,
-            font:{
-                fontSize:18,
-                fontWeight:'bold'
-            },
-            color: '#414444',
-            left:10,
-            textAlign: 'left'
-        });
-        var labPcs = Titanium.UI.createLabel({
-            text:labs[i].available_count,
-            font:{fontSize:18},
-            color: '#414444',
-            right:10,
-            textAlign: 'right'
-        });
-
-        labRow.add(labName);
-        labRow.add(labPcs);
-        data.push(labRow);
+    if(groups.today.length >= 1) {
+        var todayHeader = new header.HeaderRow("Today's Groups");
+        data.push(todayHeader);
+        groupSection(groups.today,data);
     }
 
-    var arHeaderRow = Ti.UI.createTableViewRow({
-        backgroundColor: "#D79A27"
-    });
-    var arHeader = Titanium.UI.createLabel({
-        text: "Additional Resources",
-        left: 10,
-        color: "#FFF",
-        font: {
-            fontSize: 18,
-            fontWeight: "bold"
+    if(groups.tomorrow.length >= 1) {
+        var tomorrowHeader = new header.HeaderRow("Tomorrow's Groups");
+        data.push(tomorrowHeader);
+        groupSection(groups.tomorrow, data);
+    }
+
+    if(groups.upcoming.length >= 1) {
+        var upcomingHeader = new header.HeaderRow("Upcoming Groups");
+        data.push(upcomingHeader);
+        var lastDate = '';
+        for(var i=0; i<groups.upcoming.length; i++) {
+            var startDate = new Date(groups.upcoming[i].start);
+            // If there is a new session time, insert a header in the table.
+            if(lastDate === '' || startDate.toDateString() !== lastDate) {
+                lastDate = startDate.toDateString();
+                var dateRow = new header.HeaderRow(datetime.cleanDate(startDate), '#cc3333');
+                data.push(dateRow);
+            }
+            var groupHeader = new header.HeaderRow(groups.upcoming[i].title,'#414444');
+            var locationRow = Ti.UI.createTableViewRow();
+            var locationLabel = Titanium.UI.createLabel({
+                text:groups.upcoming[i].location,
+                font:{fontSize:18},
+                color: '#414444',
+                left:10,
+                textAlign: 'left'
+            });
+            locationRow.add(locationLabel);
+            var openTime = datetime.cleanTime(groups.upcoming[i].start);
+            var closeTime = datetime.cleanTime(groups.upcoming[i].end);
+            var time = openTime + " - " + closeTime;
+            var timeRow = Ti.UI.createTableViewRow();
+            var timeLabel = Titanium.UI.createLabel({
+                text:time,
+                font:{fontSize:18},
+                color: '#414444',
+                left:10,
+                textAlign: 'left'
+            });
+            timeRow.add(timeLabel);
+
+            data.push(groupHeader);
+            data.push(locationRow);
+            data.push(timeRow);
         }
-    });
-    arHeaderRow.add(arHeader);
-    data.push(arHeaderRow);
-
-    var ar = json.resources;
-    for (var j=0; j < ar.length; j++) {
-        var arRow = Ti.UI.createTableViewRow();
-        var arName = Titanium.UI.createLabel({
-            text:ar[j].name,
-            font:{
-                fontSize:18,
-                fontWeight:'bold'
-            },
-            color: '#414444',
-            left:10,
-            textAlign: 'left'
-        });
-        var arNum = Titanium.UI.createLabel({
-            text:ar[j].available_count,
-            font:{fontSize:18},
-            color: '#414444',
-            right:10,
-            textAlign: 'right'
-        });
-
-        arRow.add(arName);
-        arRow.add(arNum);
-        data.push(arRow);
     }
+    if (groups.today.length === 0 && groups.tomorrow.length === 0 && groups.upcoming.length === 0 ) {
+        var noData = new header.HeaderRow("No Groups are scheduled");
+        data.push(noData);
+    }
+
     $.groupFinderTable.setData(data);
 }
 
 function getLibrary(entry) {
-    webservices.resources({
-        success: resources,
+    webservices.groupFinder({
+        success: groupFinder,
         onerror: onerror,
         entry: entry
     });
 }
 
 function onerror() {
-    alert("There was an error retrieving the available computers");
+    alert("Group Finder encountered an error");
 }
 
 if(Ti.Network.online) {
-    getLibrary("Available Computers");
+    getLibrary("GroupFinder");
 } else {
     alert("No network connection detected");
 }
