@@ -1,3 +1,6 @@
 "Window":{
     backgroundImage: "/images/grad_home.png"
+},
+"#commencementDashboard": {
+    layout: "horizontal"
 }

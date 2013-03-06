@@ -1,12 +1,12 @@
 <Alloy>
-	<Window title="Commencement">
-	    <View id="dashboard">
-            <ImageView class="icon" image="/images/commence/fb.png" onClick="commencementFacebookClick" />
-            <ImageView class="icon" image="/images/commence/tw.png" onClick="commencementTwitterClick" />
-            <ImageView class="icon" image="/images/commence/maps.png" onClick="commencementMapClick" />
-            <ImageView class="icon" image="/images/commence/website.png" onClick="commencementWebsiteClick" />
-            <ImageView class="icon" image="/images/commence/program.png" onClick="commencementProgramClick" />
-            <ImageView class="icon" image="/images/commence/check.png" />
+	<Window id="commencementWindow" title="Commencement">
+	    <View id="commencementDashboard">
+            <ImageView id="fb" class="icon" image="/images/commence/fb.png" onClick="commencementFacebookClick" />
+            <ImageView id="tw" class="icon" image="/images/commence/tw.png" onClick="commencementTwitterClick" />
+            <ImageView id="maps" class="icon" image="/images/commence/maps.png" onClick="commencementMapClick" />
+            <ImageView id="website" class="icon" image="/images/commence/website.png" onClick="commencementWebsiteClick" />
+            <ImageView id="program" class="icon" image="/images/commence/program.png" onClick="commencementProgramClick" />
+            <ImageView id="check" class="icon" image="/images/commence/check.png" />
         </View>
 	</Window>
 </Alloy>

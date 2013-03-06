@@ -13,24 +13,10 @@
     left: 5
 },
 "#dashboard":{
-    layout: "horizontal",
-    height: 170,
-    width: 306,
-    bottom: 40
-},
-"#dashboard[platform=ios formFactor=tablet]":{
-    layout: "horizontal",
-    height: 340,
-    width: 612,
-    bottom: 40
+    layout: "horizontal"
 },
 ".icon": {
     height: 85,
     width: 102,
-    top: 0
-},
-".icon[platform=ios formFactor=tablet]": {
-    height: 170,
-    width: 204,
     top: 0
 }
