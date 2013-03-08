@@ -36,6 +36,8 @@ function groupSection(section, data) {
 }
 
 function groupFinder(groups, entry){
+    /* Create a row at top linking to:
+    Schedule a group - http://www.uwosh.edu/library/groupfinder/create */
     var data = [];
     if(groups.today.length >= 1) {
         var todayHeader = new header.HeaderRow("Today's Groups");
