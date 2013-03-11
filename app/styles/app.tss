@@ -1,12 +1,15 @@
 "Window":{
-    backgroundColor: "#fff",
-    barColor: "#414444"
+    backgroundColor: "#F7F7F7",
+    barColor: "#333435"
+},
+"TableView": {
+    backgroundColor: "#F7F7F7"
 },
 "TableViewRow":{
     height: 85
 },
 "Label":{
-    color: "#414444",
+    color: "#333333",
     fontWeight: "bold",
     fontSize: 16,
     textAlign: "left",

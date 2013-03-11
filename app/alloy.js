@@ -19,6 +19,8 @@ var __isLargeScreen, __isHighDensityScreen, __isAndroid, __isiPad, properties = 
   windowStack = [],
   navGroup, density = Ti.Platform.displayCaps.density;
 
+Alloy.Collections.todo = Alloy.createCollection('todo');
+
 Alloy.Globals.addProperty = function(name, value) {
   properties[name] = value;
 };

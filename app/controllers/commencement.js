@@ -19,6 +19,10 @@ if (OS_IOS || OS_MOBILEWEB) {
         Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "http://www.uwosh.edu/commencement/documents/program.pdf", title: "Commencement Program"}).getView());
     }
 
+    function commencementChecklistClick(e) {
+        Alloy.CFG.navgroup.open(Alloy.createController('commencementChecklist').getView());
+    }
+
 } else {
     function commencementFacebookClick(e) {
         Alloy.createController('webViews', { url: "http://m.facebook.com/UWOshkoshCommencement", title: "UWO Commencement"}).getView().open();
@@ -38,6 +42,10 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementProgramClick(e) {
         Alloy.createController('webViews', { url: "http://www.uwosh.edu/commencement/documents/program.pdf", title: "Commencement Program"}).getView().open();
+    }
+
+    function commencementChecklistClick(e) {
+        Alloy.createController('commencementChecklist').getView().open();
     }
 
 }

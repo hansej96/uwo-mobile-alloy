@@ -6,7 +6,7 @@
             <ImageView id="maps" class="icon" image="/images/commence/maps.png" onClick="commencementMapClick" />
             <ImageView id="website" class="icon" image="/images/commence/website.png" onClick="commencementWebsiteClick" />
             <ImageView id="program" class="icon" image="/images/commence/program.png" onClick="commencementProgramClick" />
-            <ImageView id="check" class="icon" image="/images/commence/check.png" />
+            <ImageView id="check" class="icon" image="/images/commence/check.png" onClick="commencementChecklistClick" />
         </View>
 	</Window>
 </Alloy>
