@@ -96,7 +96,7 @@ Alloy.Globals.isiPad = function() {
  * test for landscpae orientation
  */
 Alloy.Globals.isLandscape = function(orient) {
-  orient = orient || Ti.UI.orientation;
+  orient = orient || Ti.Gesture.orientation;
   return orient == Ti.UI.LANDSCAPE_LEFT || orient == Ti.UI.LANDSCAPE_RIGHT;
 };
 
@@ -104,7 +104,7 @@ Alloy.Globals.isLandscape = function(orient) {
  * test for a portrait orientation
  */
 Alloy.Globals.isPortrait = function(orient) {
-  orient = orient || Ti.UI.orientation;
+  orient = orient || Ti.Gesture.orientation;
   return orient == Ti.UI.PORTRAIT || orient == Ti.UI.UPSIDE_PORTRAIT;
 };
 

@@ -50,7 +50,9 @@ if (OS_IOS || OS_MOBILEWEB) {
     }
 }
 
+
 var imageSuffix = '',
+    options,
     screenHeight = Ti.Platform.displayCaps.platformHeight,
     srceenWidth = Ti.Platform.displayCaps.platformWidth;
 

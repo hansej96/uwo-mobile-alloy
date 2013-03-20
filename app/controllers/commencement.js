@@ -51,6 +51,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 }
 
 var imageSuffix = '',
+    options,
     screenHeight = Ti.Platform.displayCaps.platformHeight,
     srceenWidth = Ti.Platform.displayCaps.platformWidth;
 
@@ -158,3 +159,7 @@ Ti.Gesture.addEventListener('orientationchange', function(ev) {
         $.commencementDashboard.left = "auto";
     }
 });
+
+//$.commencementWindow.addEventListener('click', function(e) {
+//    Alloy.createController('index');
+//});
