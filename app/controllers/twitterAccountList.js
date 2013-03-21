@@ -1,43 +1,19 @@
-if (OS_IOS || OS_MOBILEWEB) {
-    function uwoshkoshClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://twitter.com/uwoshkosh", title: "uwoshkosh" }).getView());
-    }
+function uwoshkoshClick(e) {
+    Ti.Platform.openURL("https://twitter.com/uwoshkosh");
+}
 
-    function uwoshkoshTodayClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://twitter.com/UWOshkoshToday", title: "UWOshkoshToday" }).getView());
-    }
+function uwoshkoshTodayClick(e) {
+    Ti.Platform.openURL("https://twitter.com/UWOshkoshToday");
+}
 
-    function uwoshkoshEngageClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://twitter.com/UWOshkoshEngage", title: "UWOshkoshEngage" }).getView());
-    }
+function uwoshkoshEngageClick(e) {
+    Ti.Platform.openURL("https://twitter.com/UWOshkoshEngage");
+}
 
-    function uwoAdmissionsClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://twitter.com/UWOAdmissions", title: "UWOAdmissions" }).getView());
-    }
+function uwoAdmissionsClick(e) {
+    Ti.Platform.openURL("https://twitter.com/UWOAdmissions");
+}
 
-    function uwoshkoshTitansClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://twitter.com/UWOshkoshTitans", title: "UWOshkoshTitans" }).getView());
-    }
-
-} else {
-    function uwoshkoshClick(e) {
-        Alloy.createController('webViews', { url: "https://twitter.com/uwoshkosh", title: "uwoshkosh" }).getView().open();
-    }
-
-    function uwoshkoshTodayClick(e) {
-        Alloy.createController('webViews', { url: "https://twitter.com/UWOshkoshToday", title: "UWOshkoshToday" }).getView().open();
-    }
-
-    function uwoshkoshEngageClick(e) {
-        Alloy.createController('webViews', { url: "https://twitter.com/UWOshkoshEngage", title: "UWOshkoshEngage" }).getView().open();
-    }
-
-    function uwoAdmissionsClick(e) {
-        Alloy.createController('webViews', { url: "https://twitter.com/UWOAdmissions", title: "UWOAdmissions" }).getView().open();
-    }
-
-    function uwoshkoshTitansClick(e) {
-        Alloy.createController('webViews', { url: "https://twitter.com/UWOshkoshTitans", title: "UWOshkoshTitans" }).getView().open();
-    }
-
+function uwoshkoshTitansClick(e) {
+    Ti.Platform.openURL("https://twitter.com/UWOshkoshTitans");
 }
