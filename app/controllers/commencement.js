@@ -71,7 +71,7 @@ if(Alloy.Globals.isLargeScreen()) {
     imageSuffix = "_ipad";
 }
 
-if(Alloy.Globals.isAndroid() && Alloy.Globals.isHighDensityScreen()) {
+if(OS_ANDROID && Alloy.Globals.isHighDensityScreen()) {
     imageSuffix = "@2x";
 }
 
@@ -94,7 +94,7 @@ if(Alloy.Globals.isLargeScreen()) {
         dashboardBottom: 120,
         dashboardBottomLandscape: 130
     };
-} else if(Alloy.Globals.isHighDensityScreen() && Alloy.Globals.isAndroid()) {
+} else if(Alloy.Globals.isHighDensityScreen() && OS_ANDROID) {
     options = {
         dashboardHeight: 170,
         dashboardWidth: 306,

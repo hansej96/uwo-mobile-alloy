@@ -72,7 +72,7 @@ if(Alloy.Globals.isLargeScreen()) {
     imageSuffix = "_ipad";
 }
 
-if(Alloy.Globals.isAndroid() && Alloy.Globals.isHighDensityScreen()) {
+if(OS_ANDROID && Alloy.Globals.isHighDensityScreen()) {
     imageSuffix = "@2x";
 }
 
@@ -95,7 +95,7 @@ if(Alloy.Globals.isLargeScreen()) {
         dashboardBottom: 120,
         dashboardBottomLandscape: 130
     };
-} else if(Alloy.Globals.isHighDensityScreen() && Alloy.Globals.isAndroid()) {
+} else if(Alloy.Globals.isHighDensityScreen() && OS_ANDROID) {
     options = {
         dashboardHeight: 170,
         dashboardWidth: 306,
@@ -138,7 +138,7 @@ if(Ti.Gesture.orientation == Titanium.UI.PORTRAIT || Ti.Gesture.orientation == T
     $.dashboard.height = options.dashboardHeightL
     $.dashboard.width = options.dashboardWidth;
     $.dashboard.bottom = options.dashboardBottom;
-    $.dashboard.left = "auto";
+    $.dashboard.left = 'auto';
 }
 if(Ti.Gesture.orientation == Titanium.UI.LANDSCAPE_LEFT || Ti.Gesture.orientation == Titanium.UI.LANDSCAPE_RIGHT) {
     if (OS_IOS || OS_MOBILEWEB) {
@@ -169,7 +169,7 @@ Ti.Gesture.addEventListener('orientationchange', function(ev) {
         $.dashboard.height = options.dashboardHeight;
         $.dashboard.width = options.dashboardWidth;
         $.dashboard.bottom = options.dashboardBottom;
-        $.dashboard.left = "auto";
+        $.dashboard.left = 'auto';
     }
 });
 
