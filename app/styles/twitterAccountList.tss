@@ -2,4 +2,7 @@
     left: 5,
     height: 73,
     width: 73
+},
+"Label":{
+    left: 90
 }
