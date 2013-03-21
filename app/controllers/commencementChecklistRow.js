@@ -34,7 +34,7 @@ function toggleStatus(e) {
         "date_completed": moment().unix()
     }).save();
 }
-
+/*
 // delete the IDed todo from the collection
 function deleteTask(e) {
     // prevent bubbling up to the row
@@ -47,4 +47,4 @@ function deleteTask(e) {
     // it from the collection, and model-view binding will automatically
     // reflect this in the tableview
     todo.destroy();
-}
+}*/
