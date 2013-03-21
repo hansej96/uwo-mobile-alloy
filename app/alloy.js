@@ -93,7 +93,7 @@ Alloy.Globals.isiPad = function() {
 };
 
 /**
- * test for landscpae orientation
+ * test for landscape orientation
  */
 Alloy.Globals.isLandscape = function(orient) {
   orient = orient || Ti.Gesture.orientation;
