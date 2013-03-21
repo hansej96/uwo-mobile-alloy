@@ -1,7 +1,4 @@
-"Window":{
-    backgroundImage: "/Default.png",
-    navBarHidden: true
-},
+
 "Window[platform=ios formFactor=tablet]":{
     navBarHidden: true
 },
@@ -12,6 +9,10 @@
     width: "auto",
     height: "auto",
     color: "#000"
+},
+"Window":{
+    backgroundImage: "/Default.png",
+    navBarHidden: true
 },
 "#newsEvents": {},
 "#people": {},
