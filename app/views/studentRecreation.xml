@@ -1,4 +1,17 @@
 <Alloy>
-	<View class="container">
-	</View>
+    <Window>
+        <TableView>
+            <TableViewRow><Label>Student Recreation \u0026 Wellness Center</Label></TableViewRow>
+            <TableViewRow onClick="newsClick"><Label>News</Label></TableViewRow>
+            <TableViewRow><Label>SRWC Hours</Label></TableViewRow>
+            <TableViewRow><Label>Sunday 10 a.m. - Midnight</Label></TableViewRow>
+            <TableViewRow><Label>Monday - Thursday 6 a.m. - Midnight</Label></TableViewRow>
+            <TableViewRow><Label>Friday 6 a.m. - 11 p.m.</Label></TableViewRow>
+            <TableViewRow><Label>Saturday 10 a.m. - 11 p.m.</Label></TableViewRow>
+            <TableViewRow onClick="membershipClick"><Label>Membership Information</Label></TableViewRow>
+            <TableViewRow onClick="featuresClick"><Label>Features</Label></TableViewRow>
+            <TableViewRow onClick="policiesClick"><Label>Policies</Label></TableViewRow>
+            <TableViewRow onClick="parkingClick"><Label>Parking</Label></TableViewRow>
+        </TableView>
+    </Window>
 </Alloy>
