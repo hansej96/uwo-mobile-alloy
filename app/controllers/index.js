@@ -54,7 +54,14 @@ if (OS_IOS || OS_MOBILEWEB) {
 var imageSuffix = '',
     options,
     screenHeight = Ti.Platform.displayCaps.platformHeight,
-    srceenWidth = Ti.Platform.displayCaps.platformWidth;
+    screenWidth = Ti.Platform.displayCaps.platformWidth,
+    currentOrientation;
+
+if (screenWidth > screenHeight) {
+    currentOrientation = 'landscape';
+} else {
+    currentOrientation = 'portrait';
+}
 
 if(Alloy.Globals.isLargeScreen()) {
     $.news.height = 170;
@@ -130,7 +137,7 @@ if(Alloy.Globals.isLargeScreen()) {
 }
 
 // Set initial orientation
-if(Ti.Gesture.orientation == Titanium.UI.PORTRAIT || Ti.Gesture.orientation == Titanium.UI.UPSIDE_PORTRAIT) {
+if(currentOrientation == "portrait") {
     if (OS_IOS || OS_MOBILEWEB) {
         $.win.backgroundImage = options.mainBackgroundImage;
     }
@@ -140,7 +147,7 @@ if(Ti.Gesture.orientation == Titanium.UI.PORTRAIT || Ti.Gesture.orientation == T
     $.dashboard.bottom = options.dashboardBottom;
     $.dashboard.left = 'auto';
 }
-if(Ti.Gesture.orientation == Titanium.UI.LANDSCAPE_LEFT || Ti.Gesture.orientation == Titanium.UI.LANDSCAPE_RIGHT) {
+if(currentOrientation == "landscape") {
     if (OS_IOS || OS_MOBILEWEB) {
         $.win.backgroundImage = options.mainBackgroundImageLandscape;
     }
