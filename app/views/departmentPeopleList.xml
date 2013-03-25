@@ -1,0 +1,6 @@
+<Alloy>
+	<Window title="Department Search">
+        <TableView id="departmentPeopleListTable">
+        </TableView>
+    </Window>
+</Alloy>

@@ -1,0 +1,5 @@
+<Alloy>
+	<Window title="Department List">
+        <TableView id="departmentListTable" />
+    </Window>
+</Alloy>

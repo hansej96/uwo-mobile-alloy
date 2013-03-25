@@ -3,7 +3,6 @@ var row = [];
 row.person = args.item;
 
 $.person.text = row.person.fullName;
-$.row.filter = $.person.text;
 
 if (OS_IOS || OS_MOBILEWEB) {
     function openDetail(e) {

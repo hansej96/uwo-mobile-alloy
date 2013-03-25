@@ -72,3 +72,34 @@ exports.doLocationSearch = function(o, path) {
 
     xhr.send();
 }
+
+exports.doDepartmentSearch = function(o, path){
+    var xhr = Ti.Network.createHTTPClient();
+
+    xhr.open("GET", path);
+
+    xhr.onload = function() {
+        try {
+            // Parse response data
+            var departments = JSON.parse(this.responseText);
+            var data = [];
+
+            for(var x = 0; x < departments.length; x++) {
+
+                data.push({
+                    dept: departments[x]
+                });
+            }
+            if (o.success) { o.success(data); }
+
+        } catch(e) {
+            Ti.API.log(e);
+        }
+    };
+
+    xhr.onerror = function(e) {
+        if (o.error) { o.error(); }
+    };
+
+    xhr.send();
+}

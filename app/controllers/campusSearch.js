@@ -32,4 +32,5 @@ $.sb.addEventListener('return', function(e) {
     } else {
         alert('No network connection detected.');
     }
+    $.sb.cancel;
 });

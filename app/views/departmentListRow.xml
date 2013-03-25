@@ -1,0 +1,5 @@
+<Alloy>
+	<TableViewRow id="row" onClick="departmentClick">
+        <Label id="department" />
+    </TableViewRow>
+</Alloy>

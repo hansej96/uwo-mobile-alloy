@@ -6,7 +6,7 @@
                 <Label>@uwoshkosh</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoshkoshTodayClick">
-                <ImageView image="/images/avatars/uwoshkoshToday.jpg" />
+                <ImageView image="/images/avatars/UWOshkoshToday.jpg" />
                 <Label>@UWOshkoshToday</Label>
             </TableViewRow>
             <TableViewRow onClick="uwoshkoshEngageClick">

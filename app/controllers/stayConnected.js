@@ -8,7 +8,7 @@ if (OS_IOS || OS_MOBILEWEB) {
     }
 
     function youtubeAccountClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "http://www.youtube.com/uwosh", title: "UWO YouTube"}).getView());
+        Ti.Platform.openURL("http://www.youtube.com/uwosh");
     }
 
     function foursquareClick(e) {
