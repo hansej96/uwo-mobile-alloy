@@ -7,7 +7,7 @@
             <TableViewRow leftImage="/images/icons/polk2.png" onClick="polkLibraryClick">
                 <Label>Polk Library</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/dining.png" onClick="studentRecreationClick">
+            <TableViewRow leftImage="/images/icons/peopleplaces.png" onClick="studentRecreationClick">
                 <Label>Student Recreation \u0026 Wellness Center</Label>
             </TableViewRow>
             <TableViewRow leftImage="/images/icons/dining.png" onClick="diningLocationsClick">
