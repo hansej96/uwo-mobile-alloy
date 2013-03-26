@@ -1,17 +1,17 @@
 <Alloy>
     <Window>
         <TableView>
-            <TableViewRow><Label>Sign up for TitanAlert</Label></TableViewRow>
+            <TableViewRow onClick="titanAlertClick"><Label>Sign up for TitanAlert</Label></TableViewRow>
             <TableViewRow><Label>Reporting Emergencies</Label></TableViewRow>
             <TableViewRow><Label>When to Call 911</Label></TableViewRow>
             <TableViewRow><Label>Call 911 in all emergencies.</Label></TableViewRow>
             <TableViewRow><Label>Note: Dial 9-911 from a University phone.</Label></TableViewRow>
             <TableViewRow><Label>Non-Emergency Phone #'s'</Label></TableViewRow>
-            <TableViewRow><Label>Campus Police: (920) 424-1212</Label></TableViewRow>
-            <TableViewRow><Label>Risk Management: (920) 424-1191</Label></TableViewRow>
-            <TableViewRow><Label>Facilities: (920) 424-3466</Label></TableViewRow>
-            <TableViewRow><Label>Safe Walk: (920) 424-1212</Label></TableViewRow>
-            <TableViewRow><Label>Crisis Hotline: (920) 233-7707</Label></TableViewRow>
+            <TableViewRow onClick="campusPoliceClick"><Label>Campus Police: (920) 424-1212</Label></TableViewRow>
+            <TableViewRow onClick="riskManagementClick"><Label>Risk Management: (920) 424-1191</Label></TableViewRow>
+            <TableViewRow onClick="facilitiesClick"><Label>Facilities: (920) 424-3466</Label></TableViewRow>
+            <TableViewRow onClick="safeWalkClick"><Label>Safe Walk: (920) 424-1212</Label></TableViewRow>
+            <TableViewRow onClick="crisisHotlineClick"><Label>Crisis Hotline: (920) 233-7707</Label></TableViewRow>
         </TableView>
     </Window>
 </Alloy>
