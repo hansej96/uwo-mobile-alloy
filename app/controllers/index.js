@@ -159,24 +159,26 @@ if(currentOrientation == "landscape") {
 }
 
 Ti.Gesture.addEventListener('orientationchange', function(ev) {
-    if(Alloy.Globals.isLandscape(ev.orientation)) {
-        if (OS_IOS || OS_MOBILEWEB) {
-            $.win.backgroundImage = options.mainBackgroundImageLandscape;
+    if(Ti.Gesture.orientation !== Titanium.UI.FACE_UP && Ti.Gesture.orientation !== Titanium.UI.FACE_DOWN) {
+        if(Alloy.Globals.isLandscape(ev.orientation)) {
+            if (OS_IOS || OS_MOBILEWEB) {
+                $.win.backgroundImage = options.mainBackgroundImageLandscape;
+            }
+            $.index.backgroundImage = options.mainBackgroundImageLandscape;
+            $.dashboard.height = options.dashboardHeightLandscape;
+            $.dashboard.width = options.dashboardWidthLandscape;
+            $.dashboard.bottom = options.dashboardBottomLandscape;
+            $.dashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
+        } else {
+            if (OS_IOS || OS_MOBILEWEB) {
+                $.win.backgroundImage = options.mainBackgroundImage;
+            }
+            $.index.backgroundImage = options.mainBackgroundImage;
+            $.dashboard.height = options.dashboardHeight;
+            $.dashboard.width = options.dashboardWidth;
+            $.dashboard.bottom = options.dashboardBottom;
+            $.dashboard.left = 'auto';
         }
-        $.index.backgroundImage = options.mainBackgroundImageLandscape;
-        $.dashboard.height = options.dashboardHeightLandscape;
-        $.dashboard.width = options.dashboardWidthLandscape;
-        $.dashboard.bottom = options.dashboardBottomLandscape;
-        $.dashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
-    } else {
-        if (OS_IOS || OS_MOBILEWEB) {
-            $.win.backgroundImage = options.mainBackgroundImage;
-        }
-        $.index.backgroundImage = options.mainBackgroundImage;
-        $.dashboard.height = options.dashboardHeight;
-        $.dashboard.width = options.dashboardWidth;
-        $.dashboard.bottom = options.dashboardBottom;
-        $.dashboard.left = 'auto';
     }
 });
 

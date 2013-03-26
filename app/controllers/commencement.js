@@ -152,18 +152,20 @@ if(currentOrientation == "landscape") {
 }
 
 Ti.Gesture.addEventListener('orientationchange', function(ev) {
-    if(Alloy.Globals.isLandscape(ev.orientation)) {
-        $.commencementWindow.backgroundImage = options.mainBackgroundImageLandscape;
-        $.commencementDashboard.height = options.dashboardHeightLandscape;
-        $.commencementDashboard.width = options.dashboardWidthLandscape;
-        $.commencementDashboard.bottom = options.dashboardBottomLandscape;
-        $.commencementDashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
-    } else {
-        $.commencementWindow.backgroundImage = options.mainBackgroundImage;
-        $.commencementDashboard.height = options.dashboardHeight;
-        $.commencementDashboard.width = options.dashboardWidth;
-        $.commencementDashboard.bottom = options.dashboardBottom;
-        $.commencementDashboard.left = "auto";
+    if(Ti.Gesture.orientation !== Titanium.UI.FACE_UP && Ti.Gesture.orientation !== Titanium.UI.FACE_DOWN) {
+        if(Alloy.Globals.isLandscape(ev.orientation)) {
+            $.commencementWindow.backgroundImage = options.mainBackgroundImageLandscape;
+            $.commencementDashboard.height = options.dashboardHeightLandscape;
+            $.commencementDashboard.width = options.dashboardWidthLandscape;
+            $.commencementDashboard.bottom = options.dashboardBottomLandscape;
+            $.commencementDashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
+        } else {
+            $.commencementWindow.backgroundImage = options.mainBackgroundImage;
+            $.commencementDashboard.height = options.dashboardHeight;
+            $.commencementDashboard.width = options.dashboardWidth;
+            $.commencementDashboard.bottom = options.dashboardBottom;
+            $.commencementDashboard.left = "auto";
+        }
     }
 });
 
