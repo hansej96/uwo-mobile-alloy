@@ -8,10 +8,10 @@
                 <Label>Desire 2 Learn</Label>
             </TableViewRow>
             <TableViewRow leftImage="/images/icons/titanmail.png" onClick="titanEmailClick">
-                <Label>TitanWeb (email)</Label>
+                <Label>Titan Apps (email)</Label>
             </TableViewRow>
             <TableViewRow leftImage="/images/icons/titanmobile.png" onClick="mobileSetupClick">
-                <Label>TitanWeb (email) mobile setup</Label>
+                <Label>Titan Apps (email) mobile setup</Label>
             </TableViewRow>
         </TableView>
     </Window>
