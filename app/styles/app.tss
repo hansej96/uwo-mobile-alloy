@@ -8,10 +8,19 @@
 ".imageRow": {
     height: 85
 },
+"TableViewRow": {
+    color: "#333333",
+    font: {
+        fontSize: 16,
+        fontWeight: "bold"
+    }
+}
 "Label":{
     color: "#333333",
-    fontWeight: "bold",
-    fontSize: 16
+    font: {
+        fontSize: 16,
+        fontWeight: "bold"
+    }
 },
 "#dashboard":{
     layout: "horizontal"
