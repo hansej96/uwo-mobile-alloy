@@ -1,16 +1,16 @@
 <Alloy>
     <Window title="Polk Library">
         <TableView>
-            <TableViewRow leftImage="/images/icons/polk2.png" onClick="availableComputersClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="availableComputersClick">
                 <Label>Computers Available Now</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/polk2.png" onClick="polkHoursClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="polkHoursClick">
                 <Label>Library Hours</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/polk2.png" onClick="findBooksVideosClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="findBooksVideosClick">
                 <Label>Find Books \u0026 Videos</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/polk2.png" onClick="groupFinderClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="groupFinderClick">
                 <Label>GroupFinder</Label>
             </TableViewRow>
         </TableView>

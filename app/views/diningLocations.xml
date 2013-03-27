@@ -1,10 +1,10 @@
 <Alloy>
     <Window title="Dining Locations">
         <TableView>
-            <TableViewRow leftImage="/images/icons/dining.png" onClick="reeveUnionClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="reeveUnionClick">
                 <Label>Reeve Union</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/dining.png" onClick="blackhawkClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="blackhawkClick">
                 <Label>Blackhawk Commons</Label>
             </TableViewRow>
         </TableView>

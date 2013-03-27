@@ -1,16 +1,16 @@
 <Alloy>
     <Window title="News & Events">
         <TableView>
-            <TableViewRow leftImage="/images/icons/uwot.png" onClick="uwotClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/uwot.png" onClick="uwotClick">
                 <Label>UW Oshkosh Today</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/events.png" onClick="campusEventsClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/events.png" onClick="campusEventsClick">
                 <Label>Campus Events</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/at.png" onClick="advanceTitanClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/at.png" onClick="advanceTitanClick">
                 <Label>Advance-Titan</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/commence.png" onClick="commencementClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/commence.png" onClick="commencementClick">
                 <Label>Commencement</Label>
             </TableViewRow>
         </TableView>

@@ -1,23 +1,23 @@
 <Alloy>
     <Window title="Connect">
         <TableView>
-            <TableViewRow onClick="uwoshkoshClick">
+            <TableViewRow class="imageRow" onClick="uwoshkoshClick">
                 <ImageView image="/images/avatars/uwoshkosh.jpg" />
                 <Label>@uwoshkosh</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoshkoshTodayClick">
+            <TableViewRow class="imageRow" onClick="uwoshkoshTodayClick">
                 <ImageView image="/images/avatars/UWOshkoshToday.jpg" />
                 <Label>@UWOshkoshToday</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoshkoshEngageClick">
+            <TableViewRow class="imageRow" onClick="uwoshkoshEngageClick">
                 <ImageView image="/images/avatars/UWOshkoshEngage.jpg" />
                 <Label>@UWOshkoshEngage</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoAdmissionsClick">
+            <TableViewRow class="imageRow" onClick="uwoAdmissionsClick">
                 <ImageView image="/images/avatars/UWOAdmissions.jpg" />
                 <Label>@UWOAdmissions</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoshkoshTitansClick">
+            <TableViewRow class="imageRow" onClick="uwoshkoshTitansClick">
                 <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
                 <Label>@UWOshkoshTitans</Label>
             </TableViewRow>

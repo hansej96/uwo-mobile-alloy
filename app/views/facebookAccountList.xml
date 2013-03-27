@@ -1,19 +1,19 @@
 <Alloy>
     <Window title="Connect">
         <TableView>
-            <TableViewRow onClick="uwoshkoshClick">
+            <TableViewRow class="imageRow" onClick="uwoshkoshClick">
                 <ImageView image="/images/avatars/uwoshkosh.jpg" />
                 <Label>University of Wisconsin Oshkosh</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoshkoshEngageClick">
+            <TableViewRow class="imageRow" onClick="uwoshkoshEngageClick">
                 <ImageView image="/images/avatars/UWOalumni.jpg" />
                 <Label>University of Wisconsin Oshkosh Alumni</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoAdmissionsClick">
+            <TableViewRow class="imageRow" onClick="uwoAdmissionsClick">
                 <ImageView image="/images/avatars/UWOAdmissions.jpg" />
                 <Label>University of Wisconsin Oshkosh Admissions</Label>
             </TableViewRow>
-            <TableViewRow onClick="uwoshkoshTitansClick">
+            <TableViewRow class="imageRow" onClick="uwoshkoshTitansClick">
                 <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
                 <Label>University of Wisconsin Oshkosh Athletics</Label>
             </TableViewRow>

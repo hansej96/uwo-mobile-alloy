@@ -5,15 +5,13 @@
 "TableView": {
     backgroundColor: "#F7F7F7"
 },
-"TableViewRow":{
+".imageRow": {
     height: 85
 },
 "Label":{
     color: "#333333",
     fontWeight: "bold",
-    fontSize: 16,
-    textAlign: "left",
-    left: 5
+    fontSize: 16
 },
 "#dashboard":{
     layout: "horizontal"
@@ -22,4 +20,29 @@
     height: 85,
     width: 102,
     top: 0
+},
+".left": {
+    left: 10,
+    textAlign: "left"
+},
+".right": {
+    right: 10,
+    textAlign: "right"
+},
+".header":{
+    color: "#FFFFFF",
+    font: {
+        fontSize: 18,
+        fontWeight: "bold"
+    },
+    height: 36
+},
+".red": {
+    backgroundColor: "#CC3333"
+},
+".orange": {
+    backgroundColor: "#D79A27"
+},
+".gray": {
+    backgroundColor: "#414444"
 }

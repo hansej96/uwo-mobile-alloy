@@ -1,16 +1,16 @@
 <Alloy>
     <Window title="Stay Connected">
         <TableView>
-            <TableViewRow leftImage="/images/icons/twitter.png" onClick="twitterAccountClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/twitter.png" onClick="twitterAccountClick">
                 <Label>Twitter</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/facebook.png" onClick="facebookAccountClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/facebook.png" onClick="facebookAccountClick">
                 <Label>Facebook</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/youtube.png" onClick="youtubeAccountClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/youtube.png" onClick="youtubeAccountClick">
                 <Label>YouTube</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/foursquare.png" onClick="foursquareClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/foursquare.png" onClick="foursquareClick">
                 <Label>Foursquare</Label>
             </TableViewRow>
         </TableView>

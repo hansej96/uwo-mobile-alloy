@@ -1,16 +1,16 @@
 <Alloy>
     <Window title="Campus Services">
         <TableView>
-            <TableViewRow leftImage="/images/icons/titancard.png" onClick="titancardClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/titancard.png" onClick="titancardClick">
                 <Label>Check Your Titancard Balance</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/polk2.png" onClick="polkLibraryClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="polkLibraryClick">
                 <Label>Polk Library</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/peopleplaces.png" onClick="studentRecreationClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/peopleplaces.png" onClick="studentRecreationClick">
                 <Label>Student Recreation \u0026 Wellness Center</Label>
             </TableViewRow>
-            <TableViewRow leftImage="/images/icons/dining.png" onClick="diningLocationsClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="diningLocationsClick">
                 <Label>Today's Dining Menus</Label>
             </TableViewRow>
         </TableView>
