@@ -2,9 +2,9 @@ var args = arguments[0] || {};
 var row = [];
 row.location = args.item;
 
-
-$.title.text = row.location.title;
-$.row.filter = row.location.title;
+$.row.title = row.location.title;
+//$.title.text = row.location.title;
+//$.row.filter = row.location.title;
 
 if (OS_IOS || OS_MOBILEWEB) {
     function openDetail(e) {

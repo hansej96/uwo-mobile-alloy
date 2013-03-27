@@ -1,6 +1,6 @@
 <Alloy>
     <Window title="Campus Search">
-        <TableView id="campusSearchTable" filterAttribute="filter">
+        <TableView id="campusSearchTable" filterAttribute="title">
             <SearchBar id="sb" barColor="#000" showCancel="false" height="70" top="0" />
         </TableView>
     </Window>

@@ -1,6 +1,6 @@
 <Alloy>
     <Window title="Location Search">
-        <TableView id="locationSearchTable" filterAttribute="filter">
+        <TableView id="locationSearchTable" filterAttribute="title">
             <SearchBar id="sb" barColor="#000" showCancel="true" height="43" top="0" />
         </TableView>
     </Window>
