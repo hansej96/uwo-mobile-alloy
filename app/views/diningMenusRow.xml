@@ -1,6 +1,6 @@
 <Alloy>
     <TableViewRow>
-        <Label id="restaurant" />
-        <Label id="menu" />
+        <Label class="left" id="restaurant" />
+        <Label class="left" id="menu" />
     </TableViewRow>
 </Alloy>

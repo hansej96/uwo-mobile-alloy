@@ -2,19 +2,19 @@
     <Window>
         <TableView>
             <TableViewRow>
-                <Label id="name" />
+                <Label class="left" id="name" />
             </TableViewRow>
             <TableViewRow>
-                <Label id="dept" />
+                <Label class="left" id="dept" />
             </TableViewRow>
             <TableViewRow>
-                <Label id="email" />
+                <Label class="left" id="email" />
             </TableViewRow>
             <TableViewRow onClick="phoneClick" >
-                <Label id="phone" />
+                <Label class="left" id="phone" />
             </TableViewRow>
             <TableViewRow>
-                <Label id="office" />
+                <Label class="left" id="office" />
             </TableViewRow>
         </TableView>
     </Window>

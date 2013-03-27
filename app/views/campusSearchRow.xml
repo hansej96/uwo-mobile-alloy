@@ -1,5 +1,5 @@
 <Alloy>
     <TableViewRow id="row" onClick="openDetail">
-        <Label class="left" id="person" />
+        <Label id="person" />
     </TableViewRow>
 </Alloy>
