@@ -9,6 +9,12 @@ $.row.articleUrl = row.feedItem.link;
 $.title.text = row.feedItem.title;
 $.date.text = day.format("dddd, MMMM Do YYYY, h:mm:ss a");
 
-function openArticle(e) {
-    Ti.Platform.openURL(row.feedItem.link);
+if (OS_IOS || OS_MOBILEWEB) {
+    function openArticle(e) {
+        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: row.feedItem.link, title: row.feedItem.title}).getView());
+    }
+} else {
+    function openArticle(e) {
+        Alloy.createController('webViews', { url: row.feedItem.link, title: row.feedItem.title}).getView().open();
+    }
 }
