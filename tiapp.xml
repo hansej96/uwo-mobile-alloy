@@ -49,6 +49,8 @@
     <modules>
         <module platform="commonjs">ti.cloud</module>
         <module platform="android" version="1.0">ti.physicalSizeCategory</module>
+        <module platform="iphone" version="2.0">com.thinkorange.google.analytics</module>
+        <module platform="android" version="2.0">com.thinkorange.google.analytics</module>
     </modules>
     <deployment-targets>
         <target device="blackberry">false</target>

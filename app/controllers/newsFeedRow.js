@@ -11,10 +11,18 @@ $.date.text = day.format("dddd, MMMM Do YYYY, h:mm:ss a");
 
 if (OS_IOS || OS_MOBILEWEB) {
     function openArticle(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: row.feedItem.link, title: row.feedItem.title}).getView());
+        Titanium.Analytics.featureEvent('newsFeedItem');
+        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+            url: row.feedItem.link,
+            title: row.feedItem.title
+        }).getView());
     }
 } else {
     function openArticle(e) {
-        Alloy.createController('webViews', { url: row.feedItem.link, title: row.feedItem.title}).getView().open();
+        Titanium.Analytics.featureEvent('newsFeedItem');
+        Alloy.createController('webViews', {
+            url: row.feedItem.link,
+            title: row.feedItem.title
+        }).getView().open();
     }
 }

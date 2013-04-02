@@ -1,19 +1,31 @@
 if (OS_IOS || OS_MOBILEWEB) {
     function reeveUnionClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('diningMenus', { selectedLocation: "reeveUnion"}).getView());
+        Titanium.Analytics.featureEvent('diningMenusReeveUnion');
+        Alloy.CFG.navgroup.open(Alloy.createController('diningMenus', {
+            selectedLocation: "reeveUnion"
+        }).getView());
     }
 
     function blackhawkClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('diningMenus', { selectedLocation: "blackhawkCommons"}).getView());
+        Titanium.Analytics.featureEvent('diningMenusBlackhawkCommons');
+        Alloy.CFG.navgroup.open(Alloy.createController('diningMenus', {
+            selectedLocation: "blackhawkCommons"
+        }).getView());
     }
 
 } else {
     function reeveUnionClick(e) {
-        Alloy.createController('diningMenus', { selectedLocation: "reeveUnion"}).getView().open();
+        Titanium.Analytics.featureEvent('diningMenusReeveUnion');
+        Alloy.createController('diningMenus', {
+            selectedLocation: "reeveUnion"
+        }).getView().open();
     }
 
     function blackhawkClick(e) {
-        Alloy.createController('diningMenus', { selectedLocation: "blackhawkCommons"}).getView().open();
+        Titanium.Analytics.featureEvent('diningMenusBlackhawkCommons');
+        Alloy.createController('diningMenus', {
+            selectedLocation: "blackhawkCommons"
+        }).getView().open();
     }
 
 }

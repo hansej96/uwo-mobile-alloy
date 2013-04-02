@@ -4,13 +4,15 @@ function authSuccess() {
     Ti.App.Properties.setBool("myUwoAuth", true);
 
     if (OS_IOS || OS_MOBILEWEB) {
+        Titanium.Analytics.featureEvent('titanCard');
         Alloy.CFG.navgroup.open(Alloy.createController('titancard').getView());
     } else {
+        Titanium.Analytics.featureEvent('titanCard');
         Alloy.createController('titancard').getView().open();
     }
 }
 
-function loginClick (e) {
+function loginClick(e) {
     $.username.blur();
     $.password.blur();
 
@@ -19,7 +21,7 @@ function loginClick (e) {
             username: $.username.value,
             password: $.password.value,
             success: authSuccess,
-            onerror: function() {
+            onerror: function () {
                 alert("An error occured")
             }
         };

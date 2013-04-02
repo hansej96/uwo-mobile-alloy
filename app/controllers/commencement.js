@@ -1,50 +1,86 @@
 if (OS_IOS || OS_MOBILEWEB) {
     function commencementFacebookClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "http://m.facebook.com/UWOshkoshCommencement", title: "UWO Commencement"}).getView());
+        Titanium.Analytics.featureEvent('commencementFacebook');
+        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+            url: "http://m.facebook.com/UWOshkoshCommencement",
+            title: "UWO Commencement"
+        }).getView());
     }
 
     function commencementTwitterClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "https://twitter.com/uwocommencement", title: "@uwocommencement"}).getView());
+        Titanium.Analytics.featureEvent('commencementTwitter');
+        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+            url: "https://twitter.com/uwocommencement",
+            title: "@uwocommencement"
+        }).getView());
     }
 
     function commencementMapClick(e) {
+        Titanium.Analytics.featureEvent('commencementMap');
         Alloy.CFG.navgroup.open(Alloy.createController('commencementMap').getView());
     }
 
     function commencementWebsiteClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "http://www.uwosh.edu/commencement/", title: "UWO Commencement"}).getView());
+        Titanium.Analytics.featureEvent('commencementWebsite');
+        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/",
+            title: "UWO Commencement"
+        }).getView());
     }
 
     function commencementProgramClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', { url: "http://www.uwosh.edu/commencement/documents/program.pdf", title: "Commencement Program"}).getView());
+        Titanium.Analytics.featureEvent('commencementProgram');
+        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/documents/program.pdf",
+            title: "Commencement Program"
+        }).getView());
     }
 
     function commencementChecklistClick(e) {
+        Titanium.Analytics.featureEvent('commencementChecklist');
         Alloy.CFG.navgroup.open(Alloy.createController('commencementChecklist').getView());
     }
 
 } else {
     function commencementFacebookClick(e) {
-        Alloy.createController('webViews', { url: "http://m.facebook.com/UWOshkoshCommencement", title: "UWO Commencement"}).getView().open();
+        Titanium.Analytics.featureEvent('commencementFacebook');
+        Alloy.createController('webViews', {
+            url: "http://m.facebook.com/UWOshkoshCommencement",
+            title: "UWO Commencement"
+        }).getView().open();
     }
 
     function commencementTwitterClick(e) {
-        Alloy.createController('webViews', { url: "https://twitter.com/uwocommencement", title: "@uwocommencement"}).getView().open();
+        Titanium.Analytics.featureEvent('commencementTwitter');
+        Alloy.createController('webViews', {
+            url: "https://twitter.com/uwocommencement",
+            title: "@uwocommencement"
+        }).getView().open();
     }
 
     function commencementMapClick(e) {
+        Titanium.Analytics.featureEvent('commencementMap');
         Alloy.createController('commencementMap').getView().open();
     }
 
     function commencementWebsiteClick(e) {
-        Alloy.createController('webViews', { url: "http://www.uwosh.edu/commencement/", title: "UWO Commencement"}).getView().open();
+        Titanium.Analytics.featureEvent('commencementWebsite');
+        Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/",
+            title: "UWO Commencement"
+        }).getView().open();
     }
 
     function commencementProgramClick(e) {
-        Alloy.createController('webViews', { url: "http://www.uwosh.edu/commencement/documents/program.pdf", title: "Commencement Program"}).getView().open();
+        Titanium.Analytics.featureEvent('commencementProgram');
+        Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/documents/program.pdf",
+            title: "Commencement Program"
+        }).getView().open();
     }
 
     function commencementChecklistClick(e) {
+        Titanium.Analytics.featureEvent('commencementChecklist');
         Alloy.createController('commencementChecklist').getView().open();
     }
 
@@ -62,7 +98,7 @@ if (screenWidth > screenHeight) {
     currentOrientation = 'portrait';
 }
 
-if(Alloy.Globals.isLargeScreen()) {
+if (Alloy.Globals.isLargeScreen()) {
     $.fb.height = 170;
     $.fb.width = 204;
     $.tw.height = 170;
@@ -78,7 +114,7 @@ if(Alloy.Globals.isLargeScreen()) {
     imageSuffix = "_ipad";
 }
 
-if(OS_ANDROID && Alloy.Globals.isHighDensityScreen()) {
+if (OS_ANDROID && Alloy.Globals.isHighDensityScreen()) {
     imageSuffix = "@2x";
 }
 
@@ -90,7 +126,7 @@ $.program.image = "/images/commence/program" + imageSuffix + ".png";
 $.check.image = "/images/commence/check" + imageSuffix + ".png";
 
 // Set proper dashboard properties
-if(Alloy.Globals.isLargeScreen()) {
+if (Alloy.Globals.isLargeScreen()) {
     options = {
         mainBackgroundImage: '/images/grad_home_ipad.png',
         dashboardHeight: 340,
@@ -101,7 +137,7 @@ if(Alloy.Globals.isLargeScreen()) {
         dashboardBottom: 120,
         dashboardBottomLandscape: 130
     };
-} else if(Alloy.Globals.isHighDensityScreen() && OS_ANDROID) {
+} else if (Alloy.Globals.isHighDensityScreen() && OS_ANDROID) {
     options = {
         dashboardHeight: 170,
         dashboardWidth: 306,
@@ -114,11 +150,11 @@ if(Alloy.Globals.isLargeScreen()) {
     };
     Ti.API.info(screenHeight);
     // scale for android heights
-    if(screenHeight == '569.0') {
+    if (screenHeight == '569.0') {
         options.mainBackgroundImage = '/images/grad_home_854.png';
         options.mainBackgroundImageLandscape = '/images/grad_home_854_l.png';
         options.dashboardBottom = 80;
-    } else if(screenHeight == '533.0') {
+    } else if (screenHeight == '533.0') {
         options.mainBackgroundImage = '/images/grad_home_800.png';
         options.mainBackgroundImageLandscape = '/images/grad_home_800_l.png';
     }
@@ -136,14 +172,14 @@ if(Alloy.Globals.isLargeScreen()) {
 }
 
 // Set initial orientation
-if(currentOrientation == "portrait") {
+if (currentOrientation == "portrait") {
     $.commencementWindow.backgroundImage = options.mainBackgroundImage;
     $.commencementDashboard.height = options.dashboardHeight;
     $.commencementDashboard.width = options.dashboardWidth;
     $.commencementDashboard.bottom = options.dashboardBottom;
     $.commencementDashboard.left = "auto";
 }
-if(currentOrientation == "landscape") {
+if (currentOrientation == "landscape") {
     $.commencementWindow.backgroundImage = options.mainBackgroundImageLandscape;
     $.commencementDashboard.height = options.dashboardHeightLandscape;
     $.commencementDashboard.width = options.dashboardWidthLandscape;
@@ -151,9 +187,9 @@ if(currentOrientation == "landscape") {
     $.commencementDashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
 }
 
-Ti.Gesture.addEventListener('orientationchange', function(ev) {
-    if(Ti.Gesture.orientation !== Titanium.UI.FACE_UP && Ti.Gesture.orientation !== Titanium.UI.FACE_DOWN) {
-        if(Alloy.Globals.isLandscape(ev.orientation)) {
+Ti.Gesture.addEventListener('orientationchange', function (ev) {
+    if (Ti.Gesture.orientation !== Titanium.UI.FACE_UP && Ti.Gesture.orientation !== Titanium.UI.FACE_DOWN) {
+        if (Alloy.Globals.isLandscape(ev.orientation)) {
             $.commencementWindow.backgroundImage = options.mainBackgroundImageLandscape;
             $.commencementDashboard.height = options.dashboardHeightLandscape;
             $.commencementDashboard.width = options.dashboardWidthLandscape;

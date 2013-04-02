@@ -8,12 +8,18 @@ $.row.title = row.location.title;
 
 if (OS_IOS || OS_MOBILEWEB) {
     function openDetail(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('locationSearchDetail', { location: row.location }).getView());
+        Titanium.Analytics.featureEvent('locationSearchDetail');
+        Alloy.CFG.navgroup.open(Alloy.createController('locationSearchDetail', {
+            location: row.location
+        }).getView());
     }
 
 } else {
     function openDetail(e) {
-        Alloy.createController('locationSearchDetail', { location: row.location }).getView().open();
+        Titanium.Analytics.featureEvent('locationSearchDetail');
+        Alloy.createController('locationSearchDetail', {
+            location: row.location
+        }).getView().open();
     }
 
 }

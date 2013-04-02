@@ -8,13 +8,19 @@ $.department.text = row.department.dept;
 if (OS_IOS || OS_MOBILEWEB) {
 
     function departmentClick(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('departmentPeopleList', { peopleOrDeptUrl: $.department.text }).getView());
+        Titanium.Analytics.featureEvent('departmentPeopleList');
+        Alloy.CFG.navgroup.open(Alloy.createController('departmentPeopleList', {
+            peopleOrDeptUrl: $.department.text
+        }).getView());
     }
 
 } else {
 
     function departmentClick(e) {
-        Alloy.createController('departmentPeopleList', { peopleOrDeptUrl: $.department.text }).getView().open();
+        Titanium.Analytics.featureEvent('departmentPeopleList');
+        Alloy.createController('departmentPeopleList', {
+            peopleOrDeptUrl: $.department.text
+        }).getView().open();
     }
 
 }

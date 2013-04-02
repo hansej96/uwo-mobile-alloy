@@ -6,12 +6,18 @@ $.person.text = row.person.fullName;
 
 if (OS_IOS || OS_MOBILEWEB) {
     function openDetail(e) {
-        Alloy.CFG.navgroup.open(Alloy.createController('campusSearchDetail', { person: row.person }).getView());
+        Titanium.Analytics.featureEvent('campusSearchDetail');
+        Alloy.CFG.navgroup.open(Alloy.createController('campusSearchDetail', {
+            person: row.person
+        }).getView());
     }
 
 } else {
     function openDetail(e) {
-        Alloy.createController('campusSearchDetail', { person: row.person }).getView().open();
+        Titanium.Analytics.featureEvent('campusSearchDetail');
+        Alloy.createController('campusSearchDetail', {
+            person: row.person
+        }).getView().open();
     }
 
 }
