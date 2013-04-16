@@ -69,12 +69,6 @@ var imageSuffix = '',
     screenWidth = Ti.Platform.displayCaps.platformWidth,
     currentOrientation;
 
-if (screenWidth > screenHeight) {
-    currentOrientation = 'landscape';
-} else {
-    currentOrientation = 'portrait';
-}
-
 if (Alloy.Globals.isLargeScreen()) {
     $.news.height = 170;
     $.news.width = 204;
@@ -148,13 +142,18 @@ if (Alloy.Globals.isLargeScreen()) {
     };
 }
 
+if (screenWidth > screenHeight) {
+    currentOrientation = 'landscape';
+} else {
+    currentOrientation = 'portrait';
+}
 // Set initial orientation
 if (currentOrientation == "portrait") {
     if (OS_IOS || OS_MOBILEWEB) {
         $.win.backgroundImage = options.mainBackgroundImage;
     }
     $.index.backgroundImage = options.mainBackgroundImage;
-    $.dashboard.height = options.dashboardHeightL
+    $.dashboard.height = options.dashboardHeight;
     $.dashboard.width = options.dashboardWidth;
     $.dashboard.bottom = options.dashboardBottom;
     $.dashboard.left = 'auto';
