@@ -177,14 +177,14 @@ if (currentOrientation == "portrait") {
     $.commencementDashboard.height = options.dashboardHeight;
     $.commencementDashboard.width = options.dashboardWidth;
     $.commencementDashboard.bottom = options.dashboardBottom;
-    $.commencementDashboard.left = (screenWidth - options.dashboardWidth)/2; //"auto";
+    $.commencementDashboard.left = "auto";
 }
 if (currentOrientation == "landscape") {
     $.commencementWindow.backgroundImage = options.mainBackgroundImageLandscape;
     $.commencementDashboard.height = options.dashboardHeightLandscape;
     $.commencementDashboard.width = options.dashboardWidthLandscape;
     $.commencementDashboard.bottom = options.dashboardBottomLandscape;
-    $.commencementDashboard.left = (screenWidth - options.dashboardWidth)/2; //(Alloy.Globals.isLargeScreen()) ? 40 : 10;
+    $.commencementDashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
 }
 
 Ti.Gesture.addEventListener('orientationchange', function (ev) {
@@ -200,7 +200,7 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
             $.commencementDashboard.height = options.dashboardHeight;
             $.commencementDashboard.width = options.dashboardWidth;
             $.commencementDashboard.bottom = options.dashboardBottom;
-            $.commencementDashboard.left = (screenWidth - options.dashboardWidth)/2; //"auto";
+            $.commencementDashboard.left = "auto";
         }
     }
 });

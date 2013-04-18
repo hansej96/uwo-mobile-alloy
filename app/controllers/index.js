@@ -156,7 +156,7 @@ if (currentOrientation == "portrait") {
     $.dashboard.height = options.dashboardHeight;
     $.dashboard.width = options.dashboardWidth;
     $.dashboard.bottom = options.dashboardBottom;
-    $.dashboard.left = (screenWidth - options.dashboardWidth)/2; //'auto';
+    $.dashboard.left = 'auto';
 }
 if (currentOrientation == "landscape") {
     if (OS_IOS || OS_MOBILEWEB) {
@@ -166,7 +166,7 @@ if (currentOrientation == "landscape") {
     $.dashboard.height = options.dashboardHeightLandscape;
     $.dashboard.width = options.dashboardWidthLandscape;
     $.dashboard.bottom = options.dashboardBottomLandscape;
-    $.dashboard.left = (screenWidth - options.dashboardWidth)/2; //(Alloy.Globals.isLargeScreen()) ? 40 : 10;
+    $.dashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
 }
 
 Ti.Gesture.addEventListener('orientationchange', function (ev) {
@@ -179,7 +179,7 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
             $.dashboard.height = options.dashboardHeightLandscape;
             $.dashboard.width = options.dashboardWidthLandscape;
             $.dashboard.bottom = options.dashboardBottomLandscape;
-            $.dashboard.left = (screenWidth - options.dashboardWidth)/2; //(Alloy.Globals.isLargeScreen()) ? 40 : 10;
+            $.dashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
         } else {
             if (OS_IOS || OS_MOBILEWEB) {
                 $.win.backgroundImage = options.mainBackgroundImage;
@@ -188,7 +188,7 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
             $.dashboard.height = options.dashboardHeight;
             $.dashboard.width = options.dashboardWidth;
             $.dashboard.bottom = options.dashboardBottom;
-            $.dashboard.left = (screenWidth - options.dashboardWidth)/2; //'auto';
+            $.dashboard.left = 'auto';
         }
     }
 });

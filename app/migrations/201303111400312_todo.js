@@ -1,14 +1,13 @@
 var preload_data = [
     {item: 'Complete the application for graduation'},
-    {item: 'Tell your family and friends'},
+    {item: 'Tell your guests'},
     {item: 'Stay up to date'},
-    {item: 'Apply for honors and awards'},
-    {item: 'Request special seating for disability accommodations'},
-    {item: 'Verify your information on the official commencement list'},
+    {item: 'Apply for class speaker and other awards'},
+    {item: 'Make accommodations for guests with disabilities'},
     {item: 'Attend Countdown to Commencement'},
-    {item: 'Secure academic attire for the ceremony'},
-    {item: 'Arrive at Kolf 45 minutes prior to ceremony'},
-    {item: 'Relax and enjoy your ceremony'}
+    {item: 'View the Official Commencement List'},
+    {item: 'Purchase your cap and gown'},
+    {item: 'Attend Commencement May 11th, 2013'}
 ];
 
 migration.up = function(migrator) {

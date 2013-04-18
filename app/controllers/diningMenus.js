@@ -7,7 +7,7 @@ function reloadAllMenus() {
       success: loadMenus,
       onerror: function(msg) {
         loadedViews = [];
-        alert(msg);
+        alert('There was an error retrieving the menus');
       }
     });
 };
