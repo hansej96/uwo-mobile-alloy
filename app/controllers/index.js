@@ -156,7 +156,7 @@ if (currentOrientation == "portrait") {
     $.dashboard.height = options.dashboardHeight;
     $.dashboard.width = options.dashboardWidth;
     $.dashboard.bottom = options.dashboardBottom;
-    $.dashboard.left = 'auto';
+    $.dashboard.left = (screenWidth - options.dashboardWidth) / 2;//'auto';
 }
 if (currentOrientation == "landscape") {
     if (OS_IOS || OS_MOBILEWEB) {
@@ -188,7 +188,7 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
             $.dashboard.height = options.dashboardHeight;
             $.dashboard.width = options.dashboardWidth;
             $.dashboard.bottom = options.dashboardBottom;
-            $.dashboard.left = 'auto';
+            $.dashboard.left = (screenWidth - options.dashboardWidth) / 2;//'auto';
         }
     }
 });

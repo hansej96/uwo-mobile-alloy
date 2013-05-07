@@ -38,10 +38,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function youtubeAccountClick(e) {
         Titanium.Analytics.featureEvent('youtube');
-        Alloy.createController('webViews', {
-            url: "https://http://www.youtube.com/uwosh",
-            title: "UWO YouTube"
-        }).getView().open();
+        Ti.Platform.openURL("http://www.youtube.com/uwosh");
     }
 
     function foursquareClick(e) {

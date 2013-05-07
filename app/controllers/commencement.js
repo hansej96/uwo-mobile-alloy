@@ -44,18 +44,12 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function commencementFacebookClick(e) {
         Titanium.Analytics.featureEvent('commencementFacebook');
-        Alloy.createController('webViews', {
-            url: "http://m.facebook.com/UWOshkoshCommencement",
-            title: "UWO Commencement"
-        }).getView().open();
+        Ti.Platform.openURL("http://m.facebook.com/UWOshkoshCommencement");
     }
 
     function commencementTwitterClick(e) {
         Titanium.Analytics.featureEvent('commencementTwitter');
-        Alloy.createController('webViews', {
-            url: "https://twitter.com/uwocommencement",
-            title: "@uwocommencement"
-        }).getView().open();
+        Ti.Platform.openURL("https://twitter.com/uwocommencement");
     }
 
     function commencementMapClick(e) {
@@ -65,18 +59,12 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementWebsiteClick(e) {
         Titanium.Analytics.featureEvent('commencementWebsite');
-        Alloy.createController('webViews', {
-            url: "http://www.uwosh.edu/commencement/",
-            title: "UWO Commencement"
-        }).getView().open();
+        Ti.Platform.openURL("http://www.uwosh.edu/commencement/");
     }
 
     function commencementProgramClick(e) {
         Titanium.Analytics.featureEvent('commencementProgram');
-        Alloy.createController('webViews', {
-            url: "http://www.uwosh.edu/commencement/documents/program.pdf",
-            title: "Commencement Program"
-        }).getView().open();
+        Ti.Platform.openURL("http://www.uwosh.edu/commencement/documents/program.pdf");
     }
 
     function commencementChecklistClick(e) {
@@ -177,7 +165,7 @@ if (currentOrientation == "portrait") {
     $.commencementDashboard.height = options.dashboardHeight;
     $.commencementDashboard.width = options.dashboardWidth;
     $.commencementDashboard.bottom = options.dashboardBottom;
-    $.commencementDashboard.left = "auto";
+    $.commencementDashboard.left = (screenWidth - options.dashboardWidth) / 2;//"auto";
 }
 if (currentOrientation == "landscape") {
     $.commencementWindow.backgroundImage = options.mainBackgroundImageLandscape;
@@ -200,7 +188,7 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
             $.commencementDashboard.height = options.dashboardHeight;
             $.commencementDashboard.width = options.dashboardWidth;
             $.commencementDashboard.bottom = options.dashboardBottom;
-            $.commencementDashboard.left = "auto";
+            $.commencementDashboard.left = (screenWidth - options.dashboardWidth) / 2;//"auto";
         }
     }
 });

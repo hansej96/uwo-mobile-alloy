@@ -20,9 +20,6 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function openArticle(e) {
         Titanium.Analytics.featureEvent('newsFeedItem');
-        Alloy.createController('webViews', {
-            url: row.feedItem.link,
-            title: row.feedItem.title
-        }).getView().open();
+        Ti.Platform.openURL(row.feedItem.link);
     }
 }

@@ -34,34 +34,22 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function uwoshkoshClick(e) {
         Titanium.Analytics.featureEvent('facebookUWOshkosh');
-        Alloy.createController('webViews', {
-            url: "https://facebook.com/uwoshkosh",
-            title: "UW Oshkosh"
-        }).getView().open();
+        Ti.Platform.openURL("https://facebook.com/uwoshkosh");
     }
 
     function uwoshkoshEngageClick(e) {
         Titanium.Analytics.featureEvent('facebookUWOAlumni');
-        Alloy.createController('webViews', {
-            url: "https://facebook.com/UWOalumni",
-            title: "UWO Alumni"
-        }).getView().open();
+        Ti.Platform.openURL("https://facebook.com/UWOalumni");
     }
 
     function uwoAdmissionsClick(e) {
         Titanium.Analytics.featureEvent('facebookUWOAdmissions');
-        Alloy.createController('webViews', {
-            url: "https://facebook.com/uwo.admissions",
-            title: "UWO Admissions"
-        }).getView().open();
+        Ti.Platform.openURL("https://facebook.com/uwo.admissions");
     }
 
     function uwoshkoshTitansClick(e) {
         Titanium.Analytics.featureEvent('facebookUWOAthletics');
-        Alloy.createController('webViews', {
-            url: "https://www.facebook.com/UWOshkoshAthletics",
-            title: "UWO Titans"
-        }).getView().open();
+        Ti.Platform.openURL("https://www.facebook.com/UWOshkoshAthletics");
     }
 
 }
