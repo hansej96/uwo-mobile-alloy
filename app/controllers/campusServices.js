@@ -23,6 +23,11 @@ if (OS_IOS || OS_MOBILEWEB) {
         Titanium.Analytics.featureEvent('diningLocations');
         Alloy.CFG.navgroup.open(Alloy.createController('diningLocations').getView());
     }
+    
+    function safewalkClick(e) {
+        Titanium.Analytics.featureEvent('safewalk');
+        Alloy.CFG.navgroup.open(Alloy.createController('safewalk').getView());
+    }
 
 } else {
     function titancardClick(e) {
@@ -48,6 +53,10 @@ if (OS_IOS || OS_MOBILEWEB) {
     function diningLocationsClick(e) {
         Titanium.Analytics.featureEvent('diningLocations');
         Alloy.createController('diningLocations').getView().open();
+    }
+    function safewalkClick(e) {
+        Titanium.Analytics.featureEvent('safewalk');
+        Alloy.createController('safewalk').getView().open();
     }
 
 }

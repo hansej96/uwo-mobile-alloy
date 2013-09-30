@@ -1,19 +1,19 @@
 <Alloy>
-    <Window class="index">
-        <NavigationGroup id="navgroup" platform="ios,mobileweb">
-            <Window id="win" class="index" title="Dashboard">
-                <View id="dashboard">
-                    <ImageView id="news" class="icon" onClick="newsEventsClick" />
-                    <ImageView id="people" class="icon" onClick="peoplePlacesClick" />
-                    <ImageView id="links" class="icon" onClick="quickLinksClick" />
-                    <ImageView id="connected" class="icon" onClick="stayConnectedClick" />
-                    <ImageView id="services" class="icon" onClick="campusServicesClick" />
-                    <ImageView id="emergency" class="icon" onClick="emergencyClick" />
-                </View>
-            </Window>
-        </NavigationGroup>
+    <NavigationWindow id="win1" platform="ios">
+        <Window id="win" title="Dashboard">
+            <View id="dashboard">
+                <ImageView id="news" class="icon" onClick="newsEvents1Click" />
+                <ImageView id="people" class="icon" onClick="peoplePlaces1Click" />
+                <ImageView id="links" class="icon" onClick="quickLinks1Click" />
+                <ImageView id="connected" class="icon" onClick="stayConnected1Click" />
+                <ImageView id="services" class="icon" onClick="campusServices1Click" />
+                <ImageView id="emergency" class="icon" onClick="emergency1Click" />
+            </View>
+        </Window>
+    </NavigationWindow>
 
-        <View id="dashboard" platform="android">
+    <Window platform="android">
+        <View id="dashboard">
             <ImageView id="news" class="icon" onClick="newsEventsClick" />
             <ImageView id="people" class="icon" onClick="peoplePlacesClick" />
             <ImageView id="links" class="icon" onClick="quickLinksClick" />

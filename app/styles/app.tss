@@ -1,6 +1,8 @@
 "Window":{
     backgroundColor: "#F7F7F7",
-    barColor: "#333435"
+    barColor: "#333435",
+    navBarHidden: false,
+    navTintColor: "#fec425"
 },
 "TableView": {
     backgroundColor: "#F7F7F7"

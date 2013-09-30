@@ -1,7 +1,7 @@
 <Alloy>
     <Window title="News & Events">
         <TableView>
-            <TableViewRow class="imageRow" leftImage="/images/icons/uwot.png" onClick="uwotClick">
+            <TableViewRow class="imageRow" leftImage="/images/icons/uwot.png" onClick="uwot1Click">
                 <Label>UW Oshkosh Today</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/events.png" onClick="campusEventsClick">

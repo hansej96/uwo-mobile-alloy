@@ -21,6 +21,6 @@ function response(json) {
 portal.titanCard({
     success: response,
     onerror: function() {
-        alert("An error occurred")
+        alert("An error occurred");
     }
 });

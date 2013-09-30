@@ -22,11 +22,11 @@ function loginClick(e) {
             password: $.password.value,
             success: authSuccess,
             onerror: function () {
-                alert("An error occured")
+                alert("An error occured");
             }
         };
         portal.auth(params);
     } else {
-        alert("Username/Password are required")
+        alert("Username/Password are required");
     }
 }

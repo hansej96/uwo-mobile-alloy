@@ -1,34 +1,34 @@
 if (OS_IOS || OS_MOBILEWEB) {
-    Alloy.CFG.navgroup = $.navgroup;
+    Alloy.CFG.navwindow = $.win1;
 
-    function newsEventsClick(e) {
+    function newsEvents1Click(e) {
         Titanium.Analytics.featureEvent('newsEvents');
-        $.navgroup.open(Alloy.createController('newsEvents').getView());
+        $.win1.openWindow(Alloy.createController('newsEvents').getView());
     }
 
-    function peoplePlacesClick(e) {
+    function peoplePlaces1Click(e) {
         Titanium.Analytics.featureEvent('peoplePlaces');
-        $.navgroup.open(Alloy.createController('peoplePlaces').getView());
+        $.win1.openWindow(Alloy.createController('peoplePlaces').getView());
     }
 
-    function quickLinksClick(e) {
+    function quickLinks1Click(e) {
         Titanium.Analytics.featureEvent('quickLinks');
-        $.navgroup.open(Alloy.createController('quickLinks').getView());
+        $.win1.openWindow(Alloy.createController('quickLinks').getView());
     }
 
-    function stayConnectedClick(e) {
+    function stayConnected1Click(e) {
         Titanium.Analytics.featureEvent('stayConnected');
-        $.navgroup.open(Alloy.createController('stayConnected').getView());
+        $.win1.openWindow(Alloy.createController('stayConnected').getView());
     }
 
-    function campusServicesClick(e) {
+    function campusServices1Click(e) {
         Titanium.Analytics.featureEvent('campusServices');
-        $.navgroup.open(Alloy.createController('campusServices').getView());
+        $.win1.openWindow(Alloy.createController('campusServices').getView());
     }
 
-    function emergencyClick(e) {
+    function emergency1Click(e) {
         Titanium.Analytics.featureEvent('emergency');
-        $.navgroup.open(Alloy.createController('emergency').getView());
+        $.win1.openWindow(Alloy.createController('emergency').getView());
     }
 } else {
     function newsEventsClick(e) {
@@ -152,7 +152,9 @@ if (currentOrientation == "portrait") {
     if (OS_IOS || OS_MOBILEWEB) {
         $.win.backgroundImage = options.mainBackgroundImage;
     }
-    $.index.backgroundImage = options.mainBackgroundImage;
+    if (OS_ANDROID) {
+        $.index.backgroundImage = options.mainBackgroundImage;
+    }
     $.dashboard.height = options.dashboardHeight;
     $.dashboard.width = options.dashboardWidth;
     $.dashboard.bottom = options.dashboardBottom;
@@ -162,7 +164,9 @@ if (currentOrientation == "landscape") {
     if (OS_IOS || OS_MOBILEWEB) {
         $.win.backgroundImage = options.mainBackgroundImageLandscape;
     }
-    $.index.backgroundImage = options.mainBackgroundImageLandscape;
+    if (OS_ANDROID) {
+        $.index.backgroundImage = options.mainBackgroundImageLandscape;
+    }
     $.dashboard.height = options.dashboardHeightLandscape;
     $.dashboard.width = options.dashboardWidthLandscape;
     $.dashboard.bottom = options.dashboardBottomLandscape;
@@ -193,4 +197,4 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
     }
 });
 
-$.index.open();
+$.win1.open();

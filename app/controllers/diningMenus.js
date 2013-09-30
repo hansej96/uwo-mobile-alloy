@@ -33,7 +33,7 @@ var loadMenus = function(blackhawk, reeve) {
     }
 
     $.diningTable.setData(rows);
-}
+};
 
 if(Ti.Network.online) {
     // Perform the search
