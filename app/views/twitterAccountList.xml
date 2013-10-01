@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="Connect">
+    <Window title="Connect" platform="ios">
         <TableView>
             <TableViewRow class="imageRow" onClick="uwoshkoshClick">
                 <ImageView image="/images/avatars/uwoshkosh.jpg" />
@@ -18,6 +18,31 @@
                 <Label>@UWOAdmissions</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" onClick="uwoshkoshTitansClick">
+                <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
+                <Label>@UWOshkoshTitans</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+
+    <Window title="Connect" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" onClick="uwoshkoshAndroidClick">
+                <ImageView image="/images/avatars/uwoshkosh.jpg" />
+                <Label>@uwoshkosh</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" onClick="uwoshkoshTodayAndroidClick">
+                <ImageView image="/images/avatars/UWOshkoshToday.jpg" />
+                <Label>@UWOshkoshToday</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" onClick="uwoshkoshEngageAndroidClick">
+                <ImageView image="/images/avatars/UWOshkoshEngage.jpg" />
+                <Label>@UWOshkoshEngage</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" onClick="uwoAdmissionsAndroidClick">
+                <ImageView image="/images/avatars/UWOAdmissions.jpg" />
+                <Label>@UWOAdmissions</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" onClick="uwoshkoshTitansAndroidClick">
                 <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
                 <Label>@UWOshkoshTitans</Label>
             </TableViewRow>

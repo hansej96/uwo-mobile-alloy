@@ -2,7 +2,10 @@
     backgroundColor: "#F7F7F7",
     barColor: "#333435",
     navBarHidden: false,
-    navTintColor: "#fec425"
+    navTintColor: "#fec425",
+},
+"Window[platform=ios]": {
+    statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
 },
 "TableView": {
     backgroundColor: "#F7F7F7"

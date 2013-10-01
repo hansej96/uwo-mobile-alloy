@@ -1,5 +1,5 @@
 <Alloy>
-    <Window>
+    <Window title="Emergency">
         <TableView>
             <TableViewRow onClick="titanAlertClick" class="red"><Label class="header left">Sign up for TitanAlert</Label></TableViewRow>
             <TableViewRow class="orange"><Label class="header left">Reporting Emergencies</Label></TableViewRow>

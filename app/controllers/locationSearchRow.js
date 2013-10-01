@@ -9,13 +9,13 @@ $.row.title = row.location.title;
 if (OS_IOS || OS_MOBILEWEB) {
     function openDetail(e) {
         Titanium.Analytics.featureEvent('locationSearchDetail');
-        Alloy.CFG.navgroup.open(Alloy.createController('locationSearchDetail', {
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('locationSearchDetail', {
             location: row.location
         }).getView());
     }
 
 } else {
-    function openDetail(e) {
+    function openDetailAndroid(e) {
         Titanium.Analytics.featureEvent('locationSearchDetail');
         Alloy.createController('locationSearchDetail', {
             location: row.location

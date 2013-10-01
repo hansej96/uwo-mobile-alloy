@@ -1,5 +1,5 @@
 <Alloy>
-    <Window>
+    <Window title="Student Recreation & Wellness Center">
         <TableView>
             <TableViewRow class="orange"><Label class="header">Student Recreation \u0026 Wellness Center</Label></TableViewRow>
             <TableViewRow onClick="newsClick"><Label class="left">Tap for News</Label></TableViewRow>

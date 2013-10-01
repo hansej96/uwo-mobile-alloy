@@ -2,35 +2,35 @@ if (OS_IOS || OS_MOBILEWEB) {
     function titancardClick(e) {
         if (Ti.App.Properties.getBool("myUwoAuth") === true) {
             Titanium.Analytics.featureEvent('titancard');
-            Alloy.CFG.navgroup.open(Alloy.createController('titancard').getView());
+            Alloy.Globals.navwindow.openWindow(Alloy.createController('titancard').getView());
         } else {
             Titanium.Analytics.featureEvent('netID');
-            Alloy.CFG.navgroup.open(Alloy.createController('netID').getView());
+            Alloy.Globals.navwindow.openWindow(Alloy.createController('netID').getView());
         }
     }
 
     function polkLibraryClick(e) {
         Titanium.Analytics.featureEvent('polkLibrary');
-        Alloy.CFG.navgroup.open(Alloy.createController('polkLibrary').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('polkLibrary').getView());
     }
 
     function studentRecreationClick(e) {
         Titanium.Analytics.featureEvent('studentRecreation');
-        Alloy.CFG.navgroup.open(Alloy.createController('studentRecreation').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('studentRecreation').getView());
     }
 
     function diningLocationsClick(e) {
         Titanium.Analytics.featureEvent('diningLocations');
-        Alloy.CFG.navgroup.open(Alloy.createController('diningLocations').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('diningLocations').getView());
     }
-    
+
     function safewalkClick(e) {
         Titanium.Analytics.featureEvent('safewalk');
-        Alloy.CFG.navgroup.open(Alloy.createController('safewalk').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('safewalk').getView());
     }
 
 } else {
-    function titancardClick(e) {
+    function titancardAndroidClick(e) {
         if (Ti.App.Properties.getBool("myUwoAuth") === true) {
             Titanium.Analytics.featureEvent('titancard');
             Alloy.createController('titancard').getView().open();
@@ -40,21 +40,21 @@ if (OS_IOS || OS_MOBILEWEB) {
         }
     }
 
-    function polkLibraryClick(e) {
+    function polkLibraryAndroidClick(e) {
         Titanium.Analytics.featureEvent('polkLibrary');
         Alloy.createController('polkLibrary').getView().open();
     }
 
-    function studentRecreationClick(e) {
+    function studentRecreationAndroidClick(e) {
         Titanium.Analytics.featureEvent('studentRecreation');
         Alloy.createController('studentRecreation').getView().open();
     }
 
-    function diningLocationsClick(e) {
+    function diningLocationsAndroidClick(e) {
         Titanium.Analytics.featureEvent('diningLocations');
         Alloy.createController('diningLocations').getView().open();
     }
-    function safewalkClick(e) {
+    function safewalkAndroidClick(e) {
         Titanium.Analytics.featureEvent('safewalk');
         Alloy.createController('safewalk').getView().open();
     }

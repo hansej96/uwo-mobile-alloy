@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="Connect">
+    <Window title="Connect" platform="ios">
         <TableView>
             <TableViewRow class="imageRow" onClick="uwoshkoshClick">
                 <ImageView image="/images/avatars/uwoshkosh.jpg" />
@@ -14,6 +14,27 @@
                 <Label>University of Wisconsin Oshkosh Admissions</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" onClick="uwoshkoshTitansClick">
+                <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
+                <Label>University of Wisconsin Oshkosh Athletics</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+
+    <Window title="Connect" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" onClick="uwoshkoshAndroidClick">
+                <ImageView image="/images/avatars/uwoshkosh.jpg" />
+                <Label>University of Wisconsin Oshkosh</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" onClick="uwoshkoshEngageAndroidClick">
+                <ImageView image="/images/avatars/UWOalumni.jpg" />
+                <Label>University of Wisconsin Oshkosh Alumni</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" onClick="uwoAdmissionsAndroidClick">
+                <ImageView image="/images/avatars/UWOAdmissions.jpg" />
+                <Label>University of Wisconsin Oshkosh Admissions</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" onClick="uwoshkoshTitansAndroidClick">
                 <ImageView image="/images/avatars/UWOshkoshTitans.jpg" />
                 <Label>University of Wisconsin Oshkosh Athletics</Label>
             </TableViewRow>

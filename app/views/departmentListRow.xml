@@ -1,5 +1,9 @@
 <Alloy>
-	<TableViewRow id="row" onClick="departmentClick">
+	<TableViewRow id="row" onClick="departmentClick" platform="ios">
+        <Label class="left" id="department" />
+    </TableViewRow>
+
+    <TableViewRow id="row" onClick="departmentAndroidClick" platform="android">
         <Label class="left" id="department" />
     </TableViewRow>
 </Alloy>

@@ -12,13 +12,13 @@ $.date.text = day.format("dddd, MMMM Do YYYY, h:mm:ss a");
 if (OS_IOS || OS_MOBILEWEB) {
     function openArticle(e) {
         Titanium.Analytics.featureEvent('newsFeedItem');
-        Alloy.CFG.navwindow.openWindow(Alloy.createController('webViews', {
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
             url: row.feedItem.link,
             title: row.feedItem.title
         }).getView());
     }
 } else {
-    function openArticle(e) {
+    function openArticleAndroid(e) {
         Titanium.Analytics.featureEvent('newsFeedItem');
         Ti.Platform.openURL(row.feedItem.link);
     }

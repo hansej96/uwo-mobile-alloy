@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="commencementWindow" title="Commencement">
+	<Window id="commencementWindow" title="Commencement" platform="ios">
 	    <View id="commencementDashboard">
             <ImageView id="fb" class="icon" image="/images/commence/fb.png" onClick="commencementFacebookClick" />
             <ImageView id="tw" class="icon" image="/images/commence/tw.png" onClick="commencementTwitterClick" />
@@ -9,4 +9,15 @@
             <ImageView id="check" class="icon" image="/images/commence/check.png" onClick="commencementChecklistClick" />
         </View>
 	</Window>
+
+    <Window id="commencementWindow" title="Commencement" platform="android">
+        <View id="commencementDashboard">
+            <ImageView id="fb" class="icon" image="/images/commence/fb.png" onClick="commencementFacebookAndroidClick" />
+            <ImageView id="tw" class="icon" image="/images/commence/tw.png" onClick="commencementTwitterAndroidClick" />
+            <ImageView id="maps" class="icon" image="/images/commence/maps.png" onClick="commencementMapAndroidClick" />
+            <ImageView id="website" class="icon" image="/images/commence/website.png" onClick="commencementWebsiteAndroidClick" />
+            <ImageView id="program" class="icon" image="/images/commence/program.png" onClick="commencementProgramAndroidClick" />
+            <ImageView id="check" class="icon" image="/images/commence/check.png" onClick="commencementChecklistAndroidClick" />
+        </View>
+    </Window>
 </Alloy>

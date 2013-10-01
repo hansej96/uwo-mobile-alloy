@@ -1,6 +1,6 @@
 <Alloy>
     <!-- Main Window -->
-    <Window id="todoWin">
+    <Window id="todoWin" platform="ios">
 
         <!-- header -->
         <View id="header">
@@ -32,6 +32,29 @@
                 </Labels>
             </TabbedBar>
         </View>
+    </Window>
+
+    <Window id="todoWin" platform="android">
+
+        <!-- header -->
+        <View id="header">
+            <Label id="title">Commencement Checklist</Label>
+        </View>
+
+        <!-- Main table for tasks
+                 Use model-view binding to render the rows fo this table
+                 based on the models in the given collection. "dataCollection"
+                 represents the collection used to populate this table.
+                 "dataWhere" is a function used to filter the list of
+                 models processed within the collection. "dataTransform"
+                 is a function that will be executed on each model as it
+                 is rendered as a row. It gives the opportunity to modify
+                 the model's values before they are applied to each row.
+        -->
+        <TableView id="todoTable" dataCollection="todo"
+                       dataFilter="whereFunction" dataTransform="transformFunction">
+                <Require src="commencementChecklistRow"/>
+        </TableView>
 
         <!-- Android: menu -->
         <Menu platform="android">

@@ -1,6 +1,11 @@
 <Alloy>
-	<TableViewRow id="row" onClick="openArticle">
+	<TableViewRow id="row" onClick="openArticle" platform="ios">
 	    <Label id="date" />
 	    <Label id="title" />
 	</TableViewRow>
+
+  <TableViewRow id="row" onClick="openArticleAndroid" platform="android">
+      <Label id="date" />
+      <Label id="title" />
+  </TableViewRow>
 </Alloy>

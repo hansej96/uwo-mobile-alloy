@@ -1,5 +1,9 @@
 <Alloy>
-    <TableViewRow id="row" onClick="openDetail">
+    <TableViewRow id="row" onClick="openDetail" platform="ios">
+        <Label id="title" />
+    </TableViewRow>
+
+    <TableViewRow id="row" onClick="openDetailAndroid" platform="android">
         <Label id="title" />
     </TableViewRow>
 </Alloy>

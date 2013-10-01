@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="Campus Services">
+    <Window title="Campus Services" platform="ios">
         <TableView>
             <TableViewRow class="imageRow" leftImage="/images/icons/titancard.png" onClick="titancardClick">
                 <Label>Check Your Titancard Balance</Label>
@@ -14,6 +14,26 @@
                 <Label>Today's Dining Menus</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/safewalk.png" onClick="safewalkClick">
+                <Label>Safewalk</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+
+    <Window title="Campus Services" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" leftImage="/images/icons/titancard.png" onClick="titancardAndroidClick">
+                <Label>Check Your Titancard Balance</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="polkLibraryAndroidClick">
+                <Label>Polk Library</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/peopleplaces.png" onClick="studentRecreationAndroidClick">
+                <Label>Student Recreation \u0026 Wellness Center</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="diningLocationsAndroidClick">
+                <Label>Today's Dining Menus</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/safewalk.png" onClick="safewalkAndroidClick">
                 <Label>Safewalk</Label>
             </TableViewRow>
         </TableView>

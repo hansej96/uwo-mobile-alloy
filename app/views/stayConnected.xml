@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="Stay Connected">
+    <Window title="Stay Connected" platform="ios">
         <TableView>
             <TableViewRow class="imageRow" leftImage="/images/icons/twitter.png" onClick="twitterAccountClick">
                 <Label>Twitter</Label>
@@ -10,8 +10,19 @@
             <TableViewRow class="imageRow" leftImage="/images/icons/youtube.png" onClick="youtubeAccountClick">
                 <Label>YouTube</Label>
             </TableViewRow>
-            <TableViewRow class="imageRow" leftImage="/images/icons/foursquare.png" onClick="foursquareClick">
-                <Label>Foursquare</Label>
+        </TableView>
+    </Window>
+
+    <Window title="Stay Connected" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" leftImage="/images/icons/twitter.png" onClick="twitterAccountAndroidClick">
+                <Label>Twitter</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/facebook.png" onClick="facebookAccountAndroidClick">
+                <Label>Facebook</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/youtube.png" onClick="youtubeAccountAndroidClick">
+                <Label>YouTube</Label>
             </TableViewRow>
         </TableView>
     </Window>

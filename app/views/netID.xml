@@ -1,7 +1,13 @@
 <Alloy>
-    <Window title="NetID">
+    <Window title="NetID" platform="ios">
         <TextField id="username" hintText="Username" />
         <TextField id="password" hintText="Password" passwordMask="true" />
         <Button title="Login" onClick="loginClick" />
+    </Window>
+
+    <Window title="NetID" platform="android">
+        <TextField id="username" hintText="Username" />
+        <TextField id="password" hintText="Password" passwordMask="true" />
+        <Button title="Login" onClick="loginAndroidClick" />
     </Window>
 </Alloy>

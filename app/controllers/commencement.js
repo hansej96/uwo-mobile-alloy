@@ -1,7 +1,7 @@
 if (OS_IOS || OS_MOBILEWEB) {
     function commencementFacebookClick(e) {
         Titanium.Analytics.featureEvent('commencementFacebook');
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
             url: "http://m.facebook.com/UWOshkoshCommencement",
             title: "UWO Commencement"
         }).getView());
@@ -9,7 +9,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementTwitterClick(e) {
         Titanium.Analytics.featureEvent('commencementTwitter');
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
             url: "https://twitter.com/uwocommencement",
             title: "@uwocommencement"
         }).getView());
@@ -17,12 +17,12 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementMapClick(e) {
         Titanium.Analytics.featureEvent('commencementMap');
-        Alloy.CFG.navgroup.open(Alloy.createController('commencementMap').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('commencementMap').getView());
     }
 
     function commencementWebsiteClick(e) {
         Titanium.Analytics.featureEvent('commencementWebsite');
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
             url: "http://www.uwosh.edu/commencement/",
             title: "UWO Commencement"
         }).getView());
@@ -30,7 +30,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementProgramClick(e) {
         Titanium.Analytics.featureEvent('commencementProgram');
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
             url: "http://www.uwosh.edu/commencement/documents/program.pdf",
             title: "Commencement Program"
         }).getView());
@@ -38,38 +38,41 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementChecklistClick(e) {
         Titanium.Analytics.featureEvent('commencementChecklist');
-        Alloy.CFG.navgroup.open(Alloy.createController('commencementChecklist').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/mid-year/students/commencement-checklist",
+            title: "Commencement Checklist"
+        }).getView());
     }
 
 } else {
-    function commencementFacebookClick(e) {
+    function commencementFacebookAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementFacebook');
         Ti.Platform.openURL("http://m.facebook.com/UWOshkoshCommencement");
     }
 
-    function commencementTwitterClick(e) {
+    function commencementTwitterAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementTwitter');
         Ti.Platform.openURL("https://twitter.com/uwocommencement");
     }
 
-    function commencementMapClick(e) {
+    function commencementMapAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementMap');
         Alloy.createController('commencementMap').getView().open();
     }
 
-    function commencementWebsiteClick(e) {
+    function commencementWebsiteAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementWebsite');
         Ti.Platform.openURL("http://www.uwosh.edu/commencement/");
     }
 
-    function commencementProgramClick(e) {
+    function commencementProgramAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementProgram');
         Ti.Platform.openURL("http://www.uwosh.edu/commencement/documents/program.pdf");
     }
 
-    function commencementChecklistClick(e) {
+    function commencementChecklistAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementChecklist');
-        Alloy.createController('commencementChecklist').getView().open();
+        Ti.Platform.openURL("http://www.uwosh.edu/commencement/mid-year/students/commencement-checklist");
     }
 
 }

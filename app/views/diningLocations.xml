@@ -1,10 +1,21 @@
 <Alloy>
-    <Window title="Dining Locations">
+    <Window title="Dining Locations" platform="ios">
         <TableView>
             <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="reeveUnionClick">
                 <Label>Reeve Union</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="blackhawkClick">
+                <Label>Blackhawk Commons</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+
+    <Window title="Dining Locations" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="reeveUnionAndroidClick">
+                <Label>Reeve Union</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="blackhawkAndroidClick">
                 <Label>Blackhawk Commons</Label>
             </TableViewRow>
         </TableView>
