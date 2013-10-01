@@ -12,7 +12,7 @@ $.date.text = day.format("dddd, MMMM Do YYYY, h:mm:ss a");
 if (OS_IOS || OS_MOBILEWEB) {
     function openArticle(e) {
         Titanium.Analytics.featureEvent('newsFeedItem');
-        Alloy.CFG.navgroup.open(Alloy.createController('webViews', {
+        Alloy.CFG.navwindow.openWindow(Alloy.createController('webViews', {
             url: row.feedItem.link,
             title: row.feedItem.title
         }).getView());

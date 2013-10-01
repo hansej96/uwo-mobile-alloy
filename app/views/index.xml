@@ -1,25 +1,25 @@
 <Alloy>
     <NavigationWindow id="win1" platform="ios">
-        <Window id="win" title="Dashboard">
+        <Window id="index" title="Dashboard">
             <View id="dashboard">
-                <ImageView id="news" class="icon" onClick="newsEvents1Click" />
-                <ImageView id="people" class="icon" onClick="peoplePlaces1Click" />
-                <ImageView id="links" class="icon" onClick="quickLinks1Click" />
-                <ImageView id="connected" class="icon" onClick="stayConnected1Click" />
-                <ImageView id="services" class="icon" onClick="campusServices1Click" />
-                <ImageView id="emergency" class="icon" onClick="emergency1Click" />
+                <ImageView id="news" class="icon" onClick="newsEventsClick" />
+                <ImageView id="people" class="icon" onClick="peoplePlacesClick" />
+                <ImageView id="links" class="icon" onClick="quickLinksClick" />
+                <ImageView id="connected" class="icon" onClick="stayConnectedClick" />
+                <ImageView id="services" class="icon" onClick="campusServicesClick" />
+                <ImageView id="emergency" class="icon" onClick="emergencyClick" />
             </View>
         </Window>
     </NavigationWindow>
 
-    <Window platform="android">
+    <Window platform="android" id="index">
         <View id="dashboard">
-            <ImageView id="news" class="icon" onClick="newsEventsClick" />
-            <ImageView id="people" class="icon" onClick="peoplePlacesClick" />
-            <ImageView id="links" class="icon" onClick="quickLinksClick" />
-            <ImageView id="connected" class="icon" onClick="stayConnectedClick" />
-            <ImageView id="services" class="icon" onClick="campusServicesClick" />
-            <ImageView id="emergency" class="icon" onClick="emergencyClick" />
+            <ImageView id="news" class="icon" onClick="newsEventsAndroidClick" />
+            <ImageView id="people" class="icon" onClick="peoplePlacesAndroidClick" />
+            <ImageView id="links" class="icon" onClick="quickLinksAndroidClick" />
+            <ImageView id="connected" class="icon" onClick="stayConnectedAndroidClick" />
+            <ImageView id="services" class="icon" onClick="campusServicesAndroidClick" />
+            <ImageView id="emergency" class="icon" onClick="emergencyAndroidClick" />
         </View>
     </Window>
 </Alloy>

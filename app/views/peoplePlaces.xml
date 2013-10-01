@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="People & Places">
+    <Window title="People & Places" platform="ios">
         <TableView>
             <TableViewRow class="imageRow" leftImage="/images/icons/peoplesearch.png" onClick="peopleSearchClick">
                 <Label>People Search</Label>
@@ -14,6 +14,26 @@
                 <Label>Campus Map</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/parking.png" onClick="parkingMapClick">
+                <Label>Parking Map</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+
+    <Window title="People & Places" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" leftImage="/images/icons/peoplesearch.png" onClick="peopleSearchAndroidClick">
+                <Label>People Search</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/deptsearch.png" onClick="deptSearchAndroidClick">
+                <Label>Department Search</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/location.png" onClick="locationSearchAndroidClick">
+                <Label>Location Search</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/map.png" onClick="campusMapAndroidClick">
+                <Label>Campus Map</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/parking.png" onClick="parkingMapAndroidClick">
                 <Label>Parking Map</Label>
             </TableViewRow>
         </TableView>

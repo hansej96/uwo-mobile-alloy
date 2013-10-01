@@ -10,13 +10,13 @@ $.row.title = row.person.fullName;
 if (OS_IOS || OS_MOBILEWEB) {
     function openDetail(e) {
         Titanium.Analytics.featureEvent('campusSearchDetail');
-        Alloy.CFG.navgroup.open(Alloy.createController('campusSearchDetail', {
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('campusSearchDetail', {
             person: row.person
         }).getView());
     }
 
 } else {
-    function openDetail(e) {
+    function openDetailAndroid(e) {
         Titanium.Analytics.featureEvent('campusSearchDetail');
         Alloy.createController('campusSearchDetail', {
             person: row.person

@@ -1,5 +1,5 @@
 <Alloy>
-    <Window id="webViewWindow">
+    <Window id="webViewWindow" modal="true">
         <WebView id="web" />
     </Window>
 </Alloy>

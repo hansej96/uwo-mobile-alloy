@@ -1,3 +1,4 @@
 <Alloy>
-    <TableViewRow id="row" onClick="openDetail" />
+    <TableViewRow id="row" onClick="openDetail" platform="ios" />
+    <TableViewRow id="row" onClick="openDetailAndroid" platform="android" />
 </Alloy>

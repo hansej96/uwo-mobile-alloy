@@ -1,62 +1,62 @@
 if (OS_IOS || OS_MOBILEWEB) {
-    Alloy.CFG.navwindow = $.win1;
+    Alloy.Globals.navwindow = $.win1;
 
-    function newsEvents1Click(e) {
+    function newsEventsClick(e) {
         Titanium.Analytics.featureEvent('newsEvents');
         $.win1.openWindow(Alloy.createController('newsEvents').getView());
     }
 
-    function peoplePlaces1Click(e) {
+    function peoplePlacesClick(e) {
         Titanium.Analytics.featureEvent('peoplePlaces');
         $.win1.openWindow(Alloy.createController('peoplePlaces').getView());
     }
 
-    function quickLinks1Click(e) {
+    function quickLinksClick(e) {
         Titanium.Analytics.featureEvent('quickLinks');
         $.win1.openWindow(Alloy.createController('quickLinks').getView());
     }
 
-    function stayConnected1Click(e) {
+    function stayConnectedClick(e) {
         Titanium.Analytics.featureEvent('stayConnected');
         $.win1.openWindow(Alloy.createController('stayConnected').getView());
     }
 
-    function campusServices1Click(e) {
+    function campusServicesClick(e) {
         Titanium.Analytics.featureEvent('campusServices');
         $.win1.openWindow(Alloy.createController('campusServices').getView());
     }
 
-    function emergency1Click(e) {
+    function emergencyClick(e) {
         Titanium.Analytics.featureEvent('emergency');
         $.win1.openWindow(Alloy.createController('emergency').getView());
     }
 } else {
-    function newsEventsClick(e) {
+    function newsEventsAndroidClick(e) {
         Titanium.Analytics.featureEvent('newsEvents');
         Alloy.createController('newsEvents').getView().open();
     }
 
-    function peoplePlacesClick(e) {
+    function peoplePlacesAndroidClick(e) {
         Titanium.Analytics.featureEvent('peoplePlaces');
         Alloy.createController('peoplePlaces').getView().open();
     }
 
-    function quickLinksClick(e) {
+    function quickLinksAndroidClick(e) {
         Titanium.Analytics.featureEvent('quickLinks');
         Alloy.createController('quickLinks').getView().open();
     }
 
-    function stayConnectedClick(e) {
+    function stayConnectedAndroidClick(e) {
         Titanium.Analytics.featureEvent('stayConnected');
         Alloy.createController('stayConnected').getView().open();
     }
 
-    function campusServicesClick(e) {
+    function campusServicesAndroidClick(e) {
         Titanium.Analytics.featureEvent('campusServices');
         Alloy.createController('campusServices').getView().open();
     }
 
-    function emergencyClick(e) {
+    function emergencyAndroidClick(e) {
         Titanium.Analytics.featureEvent('emergency');
         Alloy.createController('emergency').getView().open();
     }
@@ -150,7 +150,7 @@ if (screenWidth > screenHeight) {
 // Set initial orientation
 if (currentOrientation == "portrait") {
     if (OS_IOS || OS_MOBILEWEB) {
-        $.win.backgroundImage = options.mainBackgroundImage;
+        $.index.backgroundImage = options.mainBackgroundImage;
     }
     if (OS_ANDROID) {
         $.index.backgroundImage = options.mainBackgroundImage;
@@ -162,7 +162,7 @@ if (currentOrientation == "portrait") {
 }
 if (currentOrientation == "landscape") {
     if (OS_IOS || OS_MOBILEWEB) {
-        $.win.backgroundImage = options.mainBackgroundImageLandscape;
+        $.index.backgroundImage = options.mainBackgroundImageLandscape;
     }
     if (OS_ANDROID) {
         $.index.backgroundImage = options.mainBackgroundImageLandscape;
@@ -177,7 +177,7 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
     if (Ti.Gesture.orientation !== Titanium.UI.FACE_UP && Ti.Gesture.orientation !== Titanium.UI.FACE_DOWN) {
         if (Alloy.Globals.isLandscape(ev.orientation)) {
             if (OS_IOS || OS_MOBILEWEB) {
-                $.win.backgroundImage = options.mainBackgroundImageLandscape;
+                $.index.backgroundImage = options.mainBackgroundImageLandscape;
             }
             $.index.backgroundImage = options.mainBackgroundImageLandscape;
             $.dashboard.height = options.dashboardHeightLandscape;
@@ -186,7 +186,7 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
             $.dashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
         } else {
             if (OS_IOS || OS_MOBILEWEB) {
-                $.win.backgroundImage = options.mainBackgroundImage;
+                $.index.backgroundImage = options.mainBackgroundImage;
             }
             $.index.backgroundImage = options.mainBackgroundImage;
             $.dashboard.height = options.dashboardHeight;
@@ -197,4 +197,8 @@ Ti.Gesture.addEventListener('orientationchange', function (ev) {
     }
 });
 
-$.win1.open();
+if (OS_IOS || OS_MOBILEWEB) {
+    $.win1.open();
+} else {
+    $.index.open();
+}

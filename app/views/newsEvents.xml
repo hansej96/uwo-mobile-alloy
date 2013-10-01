@@ -1,7 +1,7 @@
 <Alloy>
-    <Window title="News & Events">
+    <Window title="News & Events" platform="ios">
         <TableView>
-            <TableViewRow class="imageRow" leftImage="/images/icons/uwot.png" onClick="uwot1Click">
+            <TableViewRow class="imageRow" leftImage="/images/icons/uwot.png" onClick="uwotClick">
                 <Label>UW Oshkosh Today</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/events.png" onClick="campusEventsClick">
@@ -11,6 +11,23 @@
                 <Label>Advance-Titan</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/commence.png" onClick="commencementClick">
+                <Label>Commencement</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+    
+    <Window title="News & Events" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" leftImage="/images/icons/uwot.png" onClick="uwotAndroidClick">
+                <Label>UW Oshkosh Today</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/events.png" onClick="campusEventsAndroidClick">
+                <Label>Campus Events</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/at.png" onClick="advanceTitanAndroidClick">
+                <Label>Advance-Titan</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/commence.png" onClick="commencementAndroidClick">
                 <Label>Commencement</Label>
             </TableViewRow>
         </TableView>
