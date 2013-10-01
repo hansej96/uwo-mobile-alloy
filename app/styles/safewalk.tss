@@ -1,3 +1,10 @@
 ".container": {
 	backgroundColor: "white"
+},
+"Label": {
+    left: 10
+},
+"TextArea": {
+    width: 200,
+    right: 10
 }
