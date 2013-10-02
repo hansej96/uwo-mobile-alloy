@@ -2,14 +2,14 @@
 	<Window title="Safewalk">
         <TableView>
             <TableViewRow>
-                <Label>Request a Safewalk</Label>
+                <Label class="bold header">Request a Safewalk</Label>
             </TableViewRow>
             <TableViewRow>
-                <Label>Safe Walks are available within a five-block radius of campus, including Lot No. 39.</Label>
+                <Label class="bold">Safe Walks are available within a five-block radius of campus, including Lot No. 39.</Label>
             </TableViewRow>
             <TableViewRow></TableViewRow>
             <TableViewRow>
-                <Label>Community Service Officer Safewalk Program</Label>
+                <Label class="bold subheader">Community Service Officer Safewalk Program</Label>
             </TableViewRow>
             <TableViewRow>
                 <Label>The safety and security of the UW Oshkosh community is our No. 1 priority. To request a Safewalk, call (920) 424-1212, or complete this form.</Label>
@@ -20,26 +20,33 @@
             </TableViewRow>
             <TableViewRow></TableViewRow>
             <TableViewRow>
-                <Label>First Name: </Label><TextArea></TextArea>
+                <Label class="bold">First Name: </Label>
             </TableViewRow>
+            <TableViewRow><TextArea></TextArea></TableViewRow>
             <TableViewRow>
-                <Label>Last Name: </Label><TextArea></TextArea>
+                <Label class="bold">Last Name: </Label>
             </TableViewRow>
+            <TableViewRow><TextArea></TextArea></TableViewRow>
             <TableViewRow>
-                <Label>Email: </Label><TextArea></TextArea>
+                <Label class="bold">Email: </Label>
             </TableViewRow>
+            <TableViewRow><TextArea></TextArea></TableViewRow>
             <TableViewRow>
-                <Label>Starting Location: </Label><TextArea></TextArea>
+                <Label class="bold">Starting Location: </Label>
             </TableViewRow>
+            <TableViewRow><TextArea hintText="Please list the address or intersection where you are currently located"></TextArea></TableViewRow>
             <TableViewRow>
-                <Label>Ending Location: </Label><TextArea></TextArea>
+                <Label class="bold">Ending Location: </Label>
             </TableViewRow>
+            <TableViewRow><TextArea></TextArea></TableViewRow>
             <TableViewRow>
-                <Label>Call back number: </Label><TextArea></TextArea>
+                <Label class="bold">Call back number: </Label>
             </TableViewRow>
+            <TableViewRow><TextArea></TextArea></TableViewRow>
             <TableViewRow>
-                <Label>How to identify you: </Label><TextArea></TextArea>
+                <Label class="bold">How to identify you: </Label>
             </TableViewRow>
+            <TableViewRow><TextArea></TextArea></TableViewRow>
             <TableViewRow>
                 <Button>Request the Safewalk</Button>
             </TableViewRow>

@@ -2,9 +2,32 @@
 	backgroundColor: "white"
 },
 "Label": {
-    left: 10
+    left: 10,
+    font: {
+        fontSize: 14,
+        fontWeight: "normal"
+    }
 },
 "TextArea": {
-    width: 200,
-    right: 10
+    width: '80%',
+    left: 10
+},
+".bold": {
+    font: {
+        fontWeight: "bold"
+    }
+},
+".header": {
+    color: "#333",
+    font: {
+        fontSize: 16,
+        fontWeight: "bold"
+    }
+},
+".subheader": {
+    color: "#C34F1A",
+    font: {
+        fontSize: 16,
+        fontWeight: "bold"
+    }
 }
