@@ -22,33 +22,33 @@
             <TableViewRow>
                 <Label class="bold">First Name: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="firstName"></TextArea></TableViewRow>
             <TableViewRow>
                 <Label class="bold">Last Name: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="lastName"></TextArea></TableViewRow>
             <TableViewRow>
                 <Label class="bold">Email: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="emailAddress"></TextArea></TableViewRow>
             <TableViewRow>
                 <Label class="bold">Starting Location: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea hintText="Please list the address or intersection where you are currently located"></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="startingLocation"></TextArea></TableViewRow>
             <TableViewRow>
                 <Label class="bold">Ending Location: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="endingLocation"></TextArea></TableViewRow>
             <TableViewRow>
                 <Label class="bold">Call back number: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="phoneNumber"></TextArea></TableViewRow>
             <TableViewRow>
                 <Label class="bold">How to identify you: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="identifier"></TextArea></TableViewRow>
             <TableViewRow>
-                <Button>Request the Safewalk</Button>
+                <Button onClick="requestSafeWalkClick">Request the Safewalk</Button>
             </TableViewRow>
         </TableView>
     </Window>
