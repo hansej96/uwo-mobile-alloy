@@ -9,7 +9,7 @@
     }
 },
 "TextArea": {
-    width: '80%',
+    width: "85%",
     left: 10
 },
 ".bold": {

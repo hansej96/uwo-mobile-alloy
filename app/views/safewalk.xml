@@ -1,5 +1,5 @@
 <Alloy>
-	<Window title="Safewalk">
+	<Window title="Safewalk" platform="ios">
         <TableView>
             <TableViewRow>
                 <Label class="bold header">Request a Safewalk</Label>
@@ -34,7 +34,7 @@
             <TableViewRow>
                 <Label class="bold">Starting Location: </Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="startingLocation"></TextArea></TableViewRow>
+            <TableViewRow><TextArea id="startingLocation" hintText="Please list the address or intersection you are currently located at."></TextArea></TableViewRow>
             <TableViewRow>
                 <Label class="bold">Ending Location: </Label>
             </TableViewRow>
@@ -51,5 +51,60 @@
                 <Button onClick="requestSafeWalkClick">Request the Safewalk</Button>
             </TableViewRow>
         </TableView>
+    </Window>
+
+
+    <Window title="Safewalk" platform="android">
+        <ScrollView>
+            <View>
+                <Label class="bold header">Request a Safewalk</Label>
+            </View>
+            <View>
+                <Label class="bold">Safe Walks are available within a five-block radius of campus, including Lot No. 39.</Label>
+            </View>
+            <View></View>
+            <View>
+                <Label class="bold subheader">Community Service Officer Safewalk Program</Label>
+            </View>
+            <View>
+                <Label>The safety and security of the UW Oshkosh community is our No. 1 priority. To request a Safewalk, call (920) 424-1212, or complete this form.</Label>
+            </View>
+            <View></View>
+            <View>
+                <Label>You will receive an email verifying that we have received your request, and we will send you a follow-up email letting you know our projected time for getting to your location.</Label>
+            </View>
+            <View></View>
+            <View>
+                <Label class="bold">First Name: </Label>
+            </View>
+            <View><TextArea id="firstName"></TextArea></View>
+            <View>
+                <Label class="bold">Last Name: </Label>
+            </View>
+            <View><TextArea id="lastName"></TextArea></View>
+            <View>
+                <Label class="bold">Email: </Label>
+            </View>
+            <View><TextArea id="emailAddress"></TextArea></View>
+            <View>
+                <Label class="bold">Starting Location: </Label>
+            </View>
+            <View><TextArea id="startingLocation" hintText="Please list the address or intersection you are currently located at."></TextArea></View>
+            <View>
+                <Label class="bold">Ending Location: </Label>
+            </View>
+            <View><TextArea id="endingLocation"></TextArea></View>
+            <View>
+                <Label class="bold">Call back number: </Label>
+            </View>
+            <View><TextArea id="phoneNumber"></TextArea></View>
+            <View>
+                <Label class="bold">How to identify you: </Label>
+            </View>
+            <View><TextArea id="identifier"></TextArea></View>
+            <View>
+                <Button onClick="requestSafeWalkClick">Request the Safewalk</Button>
+            </View>
+        </ScrollView>
     </Window>
 </Alloy>
