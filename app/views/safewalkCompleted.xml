@@ -1,0 +1,40 @@
+<Alloy>
+  <Window title="Safewalk" platform="ios">
+        <TableView>
+            <TableViewRow>
+                <Label class="bold header">Thank you</Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label>Thank you for submitting a Safewalk request.</Label>
+            </TableViewRow>
+            <TableViewRow></TableViewRow>
+            <TableViewRow>
+                <Label>We have received your request and a CSO will follow-up with you letting you know our projected arrival time.</Label>
+            </TableViewRow>
+            <TableViewRow></TableViewRow>
+            <TableViewRow>
+                <Label>If you do not receive a phone call or email within 10 minutes of submitting this form, please contact us at (920) 424-1212.</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+
+
+    <Window title="Safewalk" platform="android">
+        <TableView>
+            <TableViewRow>
+                <Label class="bold header">Thank you</Label>
+            </TableViewRow>
+            <TableViewRow>
+                <Label>Thank you for submitting a Safewalk request.</Label>
+            </TableViewRow>
+            <TableViewRow></TableViewRow>
+            <TableViewRow>
+                <Label>We have received your request and a CSO will follow-up with you letting you know our projected arrival time.</Label>
+            </TableViewRow>
+            <TableViewRow></TableViewRow>
+            <TableViewRow>
+                <Label>If you do not receive a phone call or email within 10 minutes of submitting this form, please contact us at (920) 424-1212.</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+</Alloy>

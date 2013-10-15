@@ -1,0 +1,34 @@
+".container": {
+    backgroundColor: "white"
+},
+"Label": {
+    left: 10,
+    font: {
+        fontSize: 14,
+        fontWeight: "normal"
+    }
+},
+"TextField": {
+    width: "85%",
+    left: 10,
+    backgroundColor: "#fff"
+},
+".bold": {
+    font: {
+        fontWeight: "bold"
+    }
+},
+".header": {
+    color: "#333",
+    font: {
+        fontSize: 16,
+        fontWeight: "bold"
+    }
+},
+".subheader": {
+    color: "#C34F1A",
+    font: {
+        fontSize: 16,
+        fontWeight: "bold"
+    }
+}
