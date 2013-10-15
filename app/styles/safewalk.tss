@@ -8,9 +8,10 @@
         fontWeight: "normal"
     }
 },
-"TextArea": {
+"TextField": {
     width: "85%",
-    left: 10
+    left: 10,
+    backgroundColor: "#fff"
 },
 ".bold": {
     font: {

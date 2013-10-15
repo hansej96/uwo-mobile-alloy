@@ -1,5 +1,5 @@
 <Alloy>
-	<Window title="Safewalk" platform="ios">
+  <Window title="Safewalk" platform="ios">
         <TableView>
             <TableViewRow>
                 <Label class="bold header">Request a Safewalk</Label>
@@ -20,35 +20,35 @@
             </TableViewRow>
             <TableViewRow></TableViewRow>
             <TableViewRow>
-                <Label class="bold">First Name: </Label>
+                <Label class="bold">First Name (required)</Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="firstName"></TextArea></TableViewRow>
+            <TableViewRow><TextField id="firstName" autocorrect="false"></TextField></TableViewRow>
             <TableViewRow>
-                <Label class="bold">Last Name: </Label>
+                <Label class="bold">Last Name (required)</Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="lastName"></TextArea></TableViewRow>
+            <TableViewRow><TextField id="lastName" autocorrect="false"></TextField></TableViewRow>
             <TableViewRow>
-                <Label class="bold">Email: </Label>
+                <Label class="bold">Email (required)</Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="emailAddress"></TextArea></TableViewRow>
+            <TableViewRow><TextField id="emailAddress" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_EMAIL"></TextField></TableViewRow>
             <TableViewRow>
-                <Label class="bold">Starting Location: </Label>
+                <Label class="bold">Starting Location (required)</Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="startingLocation" hintText="Please list the address or intersection you are currently located at."></TextArea></TableViewRow>
+            <TableViewRow><TextField id="startingLocation" autocorrect="false" hintText="Please list the address or intersection you are currently located at."></TextField></TableViewRow>
             <TableViewRow>
-                <Label class="bold">Ending Location: </Label>
+                <Label class="bold">Ending Location (required)</Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="endingLocation"></TextArea></TableViewRow>
+            <TableViewRow><TextField id="endingLocation" autocorrect="false" hintText="What address or intersection would you like a CSO to provide a Safewalk to?"></TextField></TableViewRow>
             <TableViewRow>
-                <Label class="bold">Call back number: </Label>
+                <Label class="bold">Call back number (required)</Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="phoneNumber"></TextArea></TableViewRow>
+            <TableViewRow><TextField id="phoneNumber" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_PHONE_PAD" hintText="Please provide a phone number we can reach you at to confirm when our CSOs will arrive at your location."></TextField></TableViewRow>
             <TableViewRow>
-                <Label class="bold">How to identify you: </Label>
+                <Label class="bold">How to identify you (required)</Label>
             </TableViewRow>
-            <TableViewRow><TextArea id="identifier"></TextArea></TableViewRow>
+            <TableViewRow><TextField id="identifier" autocorrect="false" hintText="To help us identify you upon arrival, please provide a brief description of your clothing."></TextField></TableViewRow>
             <TableViewRow>
-                <Button onClick="requestSafeWalkClick">Request the Safewalk</Button>
+                <Button onClick="requestSafeWalkClick" accessibilityHint="Clicking this will open an email dialog to send a Safewalk request">Request the Safewalk</Button>
             </TableViewRow>
         </TableView>
     </Window>
@@ -75,35 +75,35 @@
             </View>
             <View></View>
             <View>
-                <Label class="bold">First Name: </Label>
+                <Label class="bold">First Name (required)</Label>
             </View>
-            <View><TextArea id="firstName"></TextArea></View>
+            <View><TextField id="firstName" autocorrect="false"></TextField></View>
             <View>
-                <Label class="bold">Last Name: </Label>
+                <Label class="bold">Last Name (required)</Label>
             </View>
-            <View><TextArea id="lastName"></TextArea></View>
+            <View><TextField id="lastName" autocorrect="false"></TextField></View>
             <View>
-                <Label class="bold">Email: </Label>
+                <Label class="bold">Email (required)</Label>
             </View>
-            <View><TextArea id="emailAddress"></TextArea></View>
+            <View><TextField id="emailAddress" autocorrect="false"></TextField></View>
             <View>
-                <Label class="bold">Starting Location: </Label>
+                <Label class="bold">Starting Location (required)</Label>
             </View>
-            <View><TextArea id="startingLocation" hintText="Please list the address or intersection you are currently located at."></TextArea></View>
+            <View><TextField id="startingLocation" autocorrect="false" hintText="Please list the address or intersection you are currently located at."></TextField></View>
             <View>
-                <Label class="bold">Ending Location: </Label>
+                <Label class="bold">Ending Location (required)</Label>
             </View>
-            <View><TextArea id="endingLocation"></TextArea></View>
+            <View><TextField id="endingLocation" autocorrect="false" hintText="What address or intersection would you like a CSO to provide a Safewalk to?"></TextField></View>
             <View>
-                <Label class="bold">Call back number: </Label>
+                <Label class="bold">Call back number (required)</Label>
             </View>
-            <View><TextArea id="phoneNumber"></TextArea></View>
+            <View><TextField id="phoneNumber" autocorrect="false"></TextField></View>
             <View>
-                <Label class="bold">How to identify you: </Label>
+                <Label class="bold">How to identify you (required)</Label>
             </View>
-            <View><TextArea id="identifier"></TextArea></View>
+            <View><TextField id="identifier" autocorrect="false" hintText="To help us identify you upon arrival, please provide a brief description of your clothing."></TextField></View>
             <View>
-                <Button onClick="requestSafeWalkClick">Request the Safewalk</Button>
+                <Button onClick="requestSafeWalkClick" accessibilityHint="Clicking this will open an email dialog to send a Safewalk request">Request the Safewalk</Button>
             </View>
         </ScrollView>
     </Window>
