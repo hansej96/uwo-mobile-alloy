@@ -56,53 +56,26 @@
 
     <Window title="Safewalk" platform="android">
         <ScrollView>
-            <View>
+            <View id="view" layout="vertical">
                 <Label class="bold header">Request a Safewalk</Label>
-            </View>
-            <View>
                 <Label class="bold">Safe Walks are available within a five-block radius of campus, including Lot No. 39.</Label>
-            </View>
-            <View></View>
-            <View>
                 <Label class="bold subheader">Community Service Officer Safewalk Program</Label>
-            </View>
-            <View>
                 <Label>The safety and security of the UW Oshkosh community is our No. 1 priority. To request a Safewalk, call (920) 424-1212, or complete this form.</Label>
-            </View>
-            <View></View>
-            <View>
                 <Label>You will receive an email verifying that we have received your request, and we will send you a follow-up email letting you know our projected time for getting to your location.</Label>
-            </View>
-            <View></View>
-            <View>
                 <Label class="bold">First Name (required)</Label>
-            </View>
-            <View><TextField id="firstName" autocorrect="false"></TextField></View>
-            <View>
+                <TextField id="firstName" autocorrect="false"></TextField>
                 <Label class="bold">Last Name (required)</Label>
-            </View>
-            <View><TextField id="lastName" autocorrect="false"></TextField></View>
-            <View>
+                <TextField id="lastName" autocorrect="false"></TextField>
                 <Label class="bold">Email (required)</Label>
-            </View>
-            <View><TextField id="emailAddress" autocorrect="false"></TextField></View>
-            <View>
+                <TextField id="emailAddress" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_EMAIL"></TextField>
                 <Label class="bold">Starting Location (required)</Label>
-            </View>
-            <View><TextField id="startingLocation" autocorrect="false" hintText="Please list the address or intersection you are currently located at."></TextField></View>
-            <View>
+                <TextField id="startingLocation" autocorrect="false" hintText="Please list the address or intersection you are currently located at."></TextField>
                 <Label class="bold">Ending Location (required)</Label>
-            </View>
-            <View><TextField id="endingLocation" autocorrect="false" hintText="What address or intersection would you like a CSO to provide a Safewalk to?"></TextField></View>
-            <View>
+                <TextField id="endingLocation" autocorrect="false" hintText="What address or intersection would you like a CSO to provide a Safewalk to?"></TextField>
                 <Label class="bold">Call back number (required)</Label>
-            </View>
-            <View><TextField id="phoneNumber" autocorrect="false"></TextField></View>
-            <View>
+                <TextField id="phoneNumber" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_PHONE_PAD"></TextField>
                 <Label class="bold">How to identify you (required)</Label>
-            </View>
-            <View><TextField id="identifier" autocorrect="false" hintText="To help us identify you upon arrival, please provide a brief description of your clothing."></TextField></View>
-            <View>
+                <TextField id="identifier" autocorrect="false" hintText="To help us identify you upon arrival, please provide a brief description of your clothing."></TextField>
                 <Button onClick="requestSafeWalkClick" accessibilityHint="Clicking this will open an email dialog to send a Safewalk request">Request the Safewalk</Button>
             </View>
         </ScrollView>
