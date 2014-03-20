@@ -9,7 +9,7 @@ if (OS_IOS || OS_MOBILEWEB) {
     function campusEventsClick(e) {
         Titanium.Analytics.featureEvent('newsFeedCampusEvents');
         Alloy.Globals.navwindow.openWindow(Alloy.createController('newsFeed', {
-            url: "http://www.uwosh.edu/home/events/events/RSS"
+            url: "http://www.uwosh.edu/today/events/feed/"
         }).getView());
     }
 
