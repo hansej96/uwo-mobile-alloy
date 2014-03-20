@@ -1,6 +1,6 @@
 function titanWebClick(e) {
     Titanium.Analytics.featureEvent('titanWebQuickLinks');
-    Ti.Platform.openURL("https://titanweb5.uwosh.edu/titanweb_prd/signon.html");
+    Ti.Platform.openURL("https://titanweb3.uwosh.edu/titanweb_prd/signon.html");
 }
 
 function d2lClick(e) {
