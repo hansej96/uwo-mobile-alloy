@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="Polk Library">
+    <Window title="Polk Library" platform="ios">
         <TableView>
             <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="availableComputersClick">
                 <Label>Computers Available Now</Label>
@@ -11,6 +11,23 @@
                 <Label>Find Books \u0026 Videos</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="groupFinderClick">
+                <Label>GroupFinder</Label>
+            </TableViewRow>
+        </TableView>
+    </Window>
+    
+    <Window title="Polk Library" platform="android">
+        <TableView>
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="availableComputersAndroidClick">
+                <Label>Computers Available Now</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="polkHoursAndroidClick">
+                <Label>Library Hours</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="findBooksVideosAndroidClick">
+                <Label>Find Books \u0026 Videos</Label>
+            </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/polk2.png" onClick="groupFinderAndroidClick">
                 <Label>GroupFinder</Label>
             </TableViewRow>
         </TableView>
