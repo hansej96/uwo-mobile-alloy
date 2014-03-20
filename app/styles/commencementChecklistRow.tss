@@ -19,10 +19,4 @@
     font: {
         fontSize: '18dp'
     }
-},
-"#remove": {
-    image: '/red_x.png',
-    right: 0,
-    height: '50dp',
-    width: '50dp'
 }
