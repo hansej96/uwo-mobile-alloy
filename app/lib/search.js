@@ -33,7 +33,7 @@ exports.doPeopleSearch = function(o, path) {
     };
 
     xhr.send();
-}
+};
 
 exports.doLocationSearch = function(o, path) {
     var xhr = Ti.Network.createHTTPClient();
@@ -71,7 +71,7 @@ exports.doLocationSearch = function(o, path) {
     };
 
     xhr.send();
-}
+};
 
 exports.doDepartmentSearch = function(o, path){
     var xhr = Ti.Network.createHTTPClient();
@@ -102,4 +102,4 @@ exports.doDepartmentSearch = function(o, path){
     };
 
     xhr.send();
-}
+};

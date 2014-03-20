@@ -39,5 +39,5 @@ exports.loadRssFeed = function(o, feed) {
     
     if (o.start) { o.start(); }
     xhr.send();
-}
+};
 

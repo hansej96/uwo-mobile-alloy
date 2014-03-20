@@ -23,4 +23,4 @@ exports.HeaderRow = function(title, color) {
   headerRow.add(headerLabel);
 
   return headerRow;
-}
+};
