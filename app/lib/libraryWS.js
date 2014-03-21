@@ -1,7 +1,7 @@
 /**
  * Library SW Model
- * @version 0.1
- * @author Joel Herron
+ * @version 0.2
+ * @author Joel Herron, Shawn Hansen
  */
 
 /**
