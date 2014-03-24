@@ -11,20 +11,20 @@
     left: 10,
     backgroundColor: "#fff"
 },
-".bold": {
+"bold": {
     font: {
         fontWeight: "bold",
         fontSize: '15dp'
     }
 },
-".header": {
+"header": {
     color: "#333",
     font: {
         fontSize: 25,
         fontWeight: "bold"
     }
-}
-".safewalkButton": {
+},
+"safewalkButton": {
 	top: 15,
 	font: {
 		fontSize: 20
