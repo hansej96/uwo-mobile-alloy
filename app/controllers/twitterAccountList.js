@@ -58,6 +58,7 @@ if (OS_IOS || OS_MOBILEWEB) {
     function uwoAdmissionsAndroidClick(e) {
         Titanium.Analytics.featureEvent('twitterUWOAdmissions');
         Ti.Platform.openURL("https://twitter.com/UWOAdmissions");
+    }
 
     function uwoshkoshTitansAndroidClick(e) {
         Titanium.Analytics.featureEvent('twitterUWOshkoshTitans');
