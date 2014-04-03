@@ -42,42 +42,26 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function uwoshkoshAndroidClick(e) {
         Titanium.Analytics.featureEvent('twitterUWOshkosh');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-            url: "https://twitter.com/uwoshkosh",
-            title: "@uwoshkosh"
-        }).getView());
+        Ti.Platform.openURL("https://twitter.com/uwoshkosh");
     }
 
     function uwoshkoshTodayAndroidClick(e) {
         Titanium.Analytics.featureEvent('twitterUWOshkoshToday');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-            url: "https://twitter.com/UWOshkoshToday",
-            title: "@UWOshkoshToday"
-        }).getView());
+        Ti.Platform.openURL("https://twitter.com/UWOshkoshToday");
     }
 
     function uwoshkoshEngageAndroidClick(e) {
         Titanium.Analytics.featureEvent('twitterUWOshkoshEngage');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-            url: "https://twitter.com/UWOshkoshEngage",
-            title: "@UWOshkoshEngage"
-        }).getView());
+        Ti.Platform.openURL("https://twitter.com/UWOshkoshEngage");
     }
 
     function uwoAdmissionsAndroidClick(e) {
         Titanium.Analytics.featureEvent('twitterUWOAdmissions');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-            url: "https://twitter.com/UWOAdmissions",
-            title: "@UWOAdmissions"
-        }).getView());
-    }
+        Ti.Platform.openURL("https://twitter.com/UWOAdmissions");
 
     function uwoshkoshTitansAndroidClick(e) {
         Titanium.Analytics.featureEvent('twitterUWOshkoshTitans');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-            url: "https://twitter.com/UWOshkoshTitans",
-            title: "@UWOshkoshTitans"
-        }).getView());
+        Ti.Platform.openURL("https://twitter.com/UWOshkoshTitans");
     }
 
 }

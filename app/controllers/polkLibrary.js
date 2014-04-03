@@ -28,10 +28,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function availableComputersAndroidClick(e) {
         Titanium.Analytics.featureEvent('availableComputers');
-        Alloy.Globals.navwindow.openWindow(Alloy.createConroller('webViews', {
-        	url:  "http://www.uwosh.edu/library/m/computer_availability_page.php",
-        	title: "Computers"
-        }).getView());
+        Ti.Platform.openURL("http://www.uwosh.edu/library/m/computer_availability_page.php");
     }
 
     function polkHoursAndroidClick(e) {
@@ -41,10 +38,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function findBooksVideosAndroidClick(e) {
         Titanium.Analytics.featureEvent('findBooksVideos');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-        	url: "http://oshlib.wisconsin.edu/vwebv/searchBasic?sk=mobile",
-        	title: "Books & Videos"
-        }).getView());
+        Ti.Platform.openURL("http://oshlib.wisconsin.edu/vwebv/searchBasic?sk=mobile");
     }
 
     function groupFinderAndroidClick(e) {

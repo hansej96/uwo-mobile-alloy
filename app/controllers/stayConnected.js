@@ -30,10 +30,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function youtubeAccountAndroidClick(e) {
         Titanium.Analytics.featureEvent('youtube');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-            url: "http://www.youtube.com/uwosh",
-            title: "YouTube"
-        }).getView());
+        Ti.Platform.openURL("http://www.youtube.com/uwosh");
     }
 
 }
