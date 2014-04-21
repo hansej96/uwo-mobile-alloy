@@ -1,12 +1,14 @@
-function titanAlertClick(e) {
-    Titanium.Analytics.featureEvent('titanAlertClick');
-    Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
-    	url: "http://www.uwosh.edu/home/titanalert/",
-    	title: "Titan Alert"
-    }).getView());
-}
+
 if (OS_IOS || OS_MOBILEWEB) {
 	
+	function titanAlertClick(e) {
+    	Titanium.Analytics.featureEvent('titanAlertClick');
+    	Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+    		url: "http://www.uwosh.edu/home/titanalert/",
+    		title: "Titan Alert"
+    	}).getView());
+    }
+    
 	function campusPoliceClick(e) {
     	Titanium.Analytics.featureEvent('callCampusPolice');
  	   Ti.Platform.openURL("telprompt:9204241212");
@@ -33,6 +35,11 @@ if (OS_IOS || OS_MOBILEWEB) {
 	}
 	
 } else {
+	
+	function titanAlertClick(e) {
+    	Titanium.Analytics.featureEvent('titanAlertClick');
+    	Ti.Platform.openURL("http://www.uwosh.edu/home/titanalert/");
+	}
 	
 	function campusPoliceAndroidClick(e) {
        Titanium.Analytics.featureEvent('callCampusPolice');
