@@ -12,6 +12,7 @@ function groupSection(section, data) {
             color: '#414444',
             left:10,
             textAlign: 'left',
+            top:10
         });
         locationRow.add(locationLabel);
         var openTime = datetime.cleanTime(section[i].start);
@@ -71,7 +72,8 @@ function groupFinder(groups, entry){
                 font:{fontSize:18},
                 color: '#414444',
                 left:10,
-                textAlign: 'left'
+                textAlign: 'left',
+                top:10
             });
             locationRow.add(locationLabel);
             var openTime = datetime.cleanTime(groups.upcoming[i].start);
@@ -84,7 +86,7 @@ function groupFinder(groups, entry){
                 color: '#414444',
                 left:10,
                 textAlign: 'left',
-                padding:15
+                top:10
             });
             timeRow.add(timeLabel);
 
